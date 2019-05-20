@@ -1,0 +1,108 @@
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}SDH ATM MPLS}{3}{section.1}% 
+\contentsline {subsection}{\numberline {1.1}SDH}{3}{subsection.1.1}% 
+\contentsline {subsubsection}{\numberline {1.1.1}Definizione}{3}{subsubsection.1.1.1}% 
+\contentsline {subsubsection}{\numberline {1.1.2}Funzionalit\IeC {\`a}}{3}{subsubsection.1.1.2}% 
+\contentsline {subsubsection}{\numberline {1.1.3}Struttura di trasporto del payload}{3}{subsubsection.1.1.3}% 
+\contentsline {paragraph}{Administrative Unit (AU)}{3}{section*.2}% 
+\contentsline {paragraph}{Virtual Container (VC) e Tributary Unit (TU)}{3}{section*.3}% 
+\contentsline {subsection}{\numberline {1.2}ATM}{4}{subsection.1.2}% 
+\contentsline {subsubsection}{\numberline {1.2.1}Definizione}{4}{subsubsection.1.2.1}% 
+\contentsline {subsubsection}{\numberline {1.2.2}Funzionamento}{4}{subsubsection.1.2.2}% 
+\contentsline {subsubsection}{\numberline {1.2.3}Applicazioni}{5}{subsubsection.1.2.3}% 
+\contentsline {subsubsection}{\numberline {1.2.4}IP su ATM}{5}{subsubsection.1.2.4}% 
+\contentsline {subsection}{\numberline {1.3}MPLS}{6}{subsection.1.3}% 
+\contentsline {subsubsection}{\numberline {1.3.1}Definizione}{6}{subsubsection.1.3.1}% 
+\contentsline {subsubsection}{\numberline {1.3.2}Introduzione}{6}{subsubsection.1.3.2}% 
+\contentsline {subsubsection}{\numberline {1.3.3}Il Routing e lo Switching Tradizionale}{7}{subsubsection.1.3.3}% 
+\contentsline {paragraph}{Cos\IeC {\textquoteright }\IeC {\`e} MPLS?}{7}{section*.4}% 
+\contentsline {paragraph}{Come funziona:}{7}{section*.5}% 
+\contentsline {subsubsection}{\numberline {1.3.4}IP + ATM}{7}{subsubsection.1.3.4}% 
+\contentsline {subsubsection}{\numberline {1.3.5}VPN basate su MPLS}{8}{subsubsection.1.3.5}% 
+\contentsline {section}{\numberline {2}Metasploit}{8}{section.2}% 
+\contentsline {subsection}{\numberline {2.1}Teoria}{8}{subsection.2.1}% 
+\contentsline {subsubsection}{\numberline {2.1.1}Penetration Test}{8}{subsubsection.2.1.1}% 
+\contentsline {subsubsection}{\numberline {2.1.2}Procedura\IeC {\nobreakspace }Black \& White Box}{8}{subsubsection.2.1.2}% 
+\contentsline {subsubsection}{\numberline {2.1.3}Analisi dell\IeC {\textquoteright }architettura e rilevazione delle vulnerabilit\IeC {\`a}}{8}{subsubsection.2.1.3}% 
+\contentsline {subsubsection}{\numberline {2.1.4}Attacco e redazione di un report}{8}{subsubsection.2.1.4}% 
+\contentsline {subsubsection}{\numberline {2.1.5}OS per il\IeC {\nobreakspace }penetration\IeC {\nobreakspace }test}{8}{subsubsection.2.1.5}% 
+\contentsline {subsubsection}{\numberline {2.1.6}Kali\IeC {\nobreakspace }linux}{9}{subsubsection.2.1.6}% 
+\contentsline {paragraph}{Tool principali:}{9}{section*.6}% 
+\contentsline {subsubsection}{\numberline {2.1.7}Metasploit\IeC {\nobreakspace }framework}{9}{subsubsection.2.1.7}% 
+\contentsline {paragraph}{Definizione exploit:}{10}{section*.7}% 
+\contentsline {paragraph}{Metasploit Auxiliary Modules}{10}{section*.8}% 
+\contentsline {paragraph}{Metasploit Encoders}{10}{section*.9}% 
+\contentsline {paragraph}{Metasploit Exploit \& Payload}{10}{section*.10}% 
+\contentsline {paragraph}{Console Commands}{10}{section*.11}% 
+\contentsline {subsection}{\numberline {2.2}Pratica}{11}{subsection.2.2}% 
+\contentsline {subsubsection}{\numberline {2.2.1}Creazione di un malware con msfvenom}{11}{subsubsection.2.2.1}% 
+\contentsline {subsubsection}{\numberline {2.2.2}Creazione di un malware con msfconsole}{11}{subsubsection.2.2.2}% 
+\contentsline {subsubsection}{\numberline {2.2.3}Tecniche di fuzzing}{12}{subsubsection.2.2.3}% 
+\contentsline {paragraph}{Utilizzate per:}{12}{section*.12}% 
+\contentsline {paragraph}{Come fare fuzz testing:}{12}{section*.13}% 
+\contentsline {paragraph}{Tipi di bug detettati:}{12}{section*.14}% 
+\contentsline {section}{\numberline {3}Fibra ottica}{13}{section.3}% 
+\contentsline {section}{\numberline {4}Buffer overflow}{13}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}Teoria}{13}{subsection.4.1}% 
+\contentsline {subsubsection}{\numberline {4.1.1}Intel i386}{13}{subsubsection.4.1.1}% 
+\contentsline {subsubsection}{\numberline {4.1.2}Tipi di buffer overflow}{14}{subsubsection.4.1.2}% 
+\contentsline {paragraph}{Buffer overflow della heap}{14}{section*.15}% 
+\contentsline {paragraph}{Buffer overflow dello stack}{14}{section*.16}% 
+\contentsline {paragraph}{Integer overflow}{15}{section*.17}% 
+\contentsline {paragraph}{String format overflow}{15}{section*.18}% 
+\contentsline {subsubsection}{\numberline {4.1.3}Stack pointer}{15}{subsubsection.4.1.3}% 
+\contentsline {subsubsection}{\numberline {4.1.4}Iniezione di shellcode}{16}{subsubsection.4.1.4}% 
+\contentsline {subsubsection}{\numberline {4.1.5}Protezione dello stack}{16}{subsubsection.4.1.5}% 
+\contentsline {subsection}{\numberline {4.2}Pratica}{16}{subsection.4.2}% 
+\contentsline {section}{\numberline {5}Reverse Code Engineering}{16}{section.5}% 
+\contentsline {subsection}{\numberline {5.1}Teoria}{16}{subsection.5.1}% 
+\contentsline {subsubsection}{\numberline {5.1.1}Motivazioni per il Reverse Code Engineering}{16}{subsubsection.5.1.1}% 
+\contentsline {subsubsection}{\numberline {5.1.2}Approccio di reverse code engineering}{17}{subsubsection.5.1.2}% 
+\contentsline {paragraph}{Prova di esecuzione:}{17}{section*.19}% 
+\contentsline {paragraph}{Data Gathering:}{17}{section*.20}% 
+\contentsline {paragraph}{Analisi:}{17}{section*.21}% 
+\contentsline {subsubsection}{\numberline {5.1.3}Definizione dell\IeC {\textquoteright }ambiente per RCE}{17}{subsubsection.5.1.3}% 
+\contentsline {subsubsection}{\numberline {5.1.4}Esecuzione RE}{18}{subsubsection.5.1.4}% 
+\contentsline {subsubsection}{\numberline {5.1.5}Programmi pi\IeC {\`u} utilizzati per l\IeC {\textquoteright }RCE}{18}{subsubsection.5.1.5}% 
+\contentsline {subsubsection}{\numberline {5.1.6}Reverse Code Engineering in ambiente Android}{19}{subsubsection.5.1.6}% 
+\contentsline {subsubsection}{\numberline {5.1.7}Smali}{20}{subsubsection.5.1.7}% 
+\contentsline {subsubsection}{\numberline {5.1.8}Approccio generale per RCE su Android}{20}{subsubsection.5.1.8}% 
+\contentsline {subsection}{\numberline {5.2}Pratica}{21}{subsection.5.2}% 
+\contentsline {subsubsection}{\numberline {5.2.1}Reverse APK}{21}{subsubsection.5.2.1}% 
+\contentsline {subsubsection}{\numberline {5.2.2}Reverse EXE}{21}{subsubsection.5.2.2}% 
+\contentsline {section}{\numberline {6}Honeypot e Honeynet}{21}{section.6}% 
+\contentsline {subsection}{\numberline {6.1}Teoria}{21}{subsection.6.1}% 
+\contentsline {subsubsection}{\numberline {6.1.1}Cos'\IeC {\`e} un honypot}{21}{subsubsection.6.1.1}% 
+\babel@toc {english}{}
+\babel@toc {english}{}
+\contentsline {subsubsection}{\numberline {6.1.2}Vantaggi}{21}{subsubsection.6.1.2}% 
+\contentsline {subsubsection}{\numberline {6.1.3}Svantaggi}{21}{subsubsection.6.1.3}% 
+\contentsline {subsubsection}{\numberline {6.1.4}Tipi di Honeypot}{21}{subsubsection.6.1.4}% 
+\contentsline {paragraph}{Honeypot puri}{21}{section*.22}% 
+\contentsline {paragraph}{Honeypot ad alta interazione}{21}{section*.23}% 
+\contentsline {paragraph}{Honeypot a bassa interazione}{22}{section*.24}% 
+\contentsline {paragraph}{Honeynet/Honeyfarm}{22}{section*.25}% 
+\contentsline {subsubsection}{\numberline {6.1.5}Famiglie di honeypots}{22}{subsubsection.6.1.5}% 
+\contentsline {paragraph}{Database honeypots}{22}{section*.26}% 
+\contentsline {paragraph}{Web honeypots}{22}{section*.27}% 
+\contentsline {paragraph}{Service honeypots}{23}{section*.28}% 
+\contentsline {paragraph}{Spamtrap honeypots}{23}{section*.29}% 
+\contentsline {paragraph}{SCADA honeypots}{23}{section*.30}% 
+\contentsline {subsection}{\numberline {6.2}Pratica}{24}{subsection.6.2}% 
+\contentsline {subsubsection}{\numberline {6.2.1}Implementazioni di honeypots}{24}{subsubsection.6.2.1}% 
+\contentsline {subsubsection}{\numberline {6.2.2}Dove mettere un honeypots}{24}{subsubsection.6.2.2}% 
+\contentsline {paragraph}{LAN}{24}{section*.31}% 
+\contentsline {paragraph}{DMZ}{24}{section*.32}% 
+\contentsline {paragraph}{Rete separata}{24}{section*.33}% 
+\contentsline {subsubsection}{\numberline {6.2.3}LOG di un honeypot}{25}{subsubsection.6.2.3}% 
+\contentsline {subsubsection}{\numberline {6.2.4}Come \IeC {\textquotedblleft }detettare\IeC {\textquotedblright } un honeypot}{25}{subsubsection.6.2.4}% 
+\contentsline {subsubsection}{\numberline {6.2.5}Come esportare un log file}{25}{subsubsection.6.2.5}% 
+\contentsline {section}{\numberline {7}Darknet, Traffic Analysis and Botnet Trends}{25}{section.7}% 
+\contentsline {subsection}{\numberline {7.1}Definizione}{25}{subsection.7.1}% 
+\contentsline {subsection}{\numberline {7.2}Storia}{26}{subsection.7.2}% 
+\contentsline {section}{\numberline {8}Challenge}{27}{section.8}% 
+\contentsline {section}{\numberline {9}Casi interessanti}{27}{section.9}% 
+\contentsline {subsection}{\numberline {9.1}Hacking Team}{27}{subsection.9.1}% 
+\contentsline {subsection}{\numberline {9.2}Carbanak}{27}{subsection.9.2}% 
+\contentsline {subsection}{\numberline {9.3}APT32 / OceanLotus}{28}{subsection.9.3}% 
+\contentsline {subsection}{\numberline {9.4}Wannacry}{29}{subsection.9.4}% 
