@@ -49,29 +49,29 @@ Davide Taurisano, Giovanni Converso, Jonathan De Boni, Eric Palmas, Kevin Doming
 \subsection{SDH}
 \subsubsection{Definizione}
 \noindent
-\textbf{Synchronous Digital Hierarchy} (Gerarchia Digitale Sincrona), comunemente detta anche SDH, è un 
-protocollo di livello fisico, ossia di trasporto, usato per la multiplazione a divisione di tempo e la 
-successiva trasmissione digitale di telefonia e dati in reti di telecomunicazioni geografiche (WAN) su 
-fibra ottica, cavo elettrico o ponte radio. Le reti che utilizzano tale protocollo a livello fisico 
-vengono dette reti SDH. Il protocollo SDH è stato standardizzato nella sua prima versione dall'Unione 
-Internazionale delle Telecomunicazioni (ITU) nel 1988. Da allora sono stati prodotti diversi aggiornamenti 
+\textbf{Synchronous Digital Hierarchy} (Gerarchia Digitale Sincrona), comunemente detta anche SDH, è un 
+protocollo di livello fisico, ossia di trasporto, usato per la multiplazione a divisione di tempo e la 
+successiva trasmissione digitale di telefonia e dati in reti di telecomunicazioni geografiche (WAN) su 
+fibra ottica, cavo elettrico o ponte radio. Le reti che utilizzano tale protocollo a livello fisico 
+vengono dette reti SDH. Il protocollo SDH è stato standardizzato nella sua prima versione dall'Unione 
+Internazionale delle Telecomunicazioni (ITU) nel 1988. Da allora sono stati prodotti diversi aggiornamenti 
 ed estensioni dello standard, che è definito da una serie di normative tra cui le più importanti in forza 
-sono la G.707, la G.783 e la G.803.
+sono la G.707, la G.783 e la G.803.
 \subsubsection{Funzionalità}
 \noindent
-Il protocollo SDH definisce nel dettaglio le modalità per aggregare (o multiplare), a vari livelli di 
-gerarchie possibili, flussi dati a bit-rate diverse e ritrasmetterli tutti insieme su grandi distanze 
-con tecniche di tipo TDM a interlacciamento di byte (byte interleaving). A differenza della Plesiochronous 
-Digital Hierarchy (Gerarchia Digitale Plesiocrona o PDH), il protocollo SDH si basa sul fatto che tutti 
-gli elementi della rete sono tra loro statisticamente sincronizzati con lo stesso clock con una precisione 
-molto elevata (stessa frequenza e stessa fase).\\\\
+Il protocollo SDH definisce nel dettaglio le modalità per aggregare (o multiplare), a vari livelli di 
+gerarchie possibili, flussi dati a bit-rate diverse e ritrasmetterli tutti insieme su grandi distanze 
+con tecniche di tipo TDM a interlacciamento di byte (byte interleaving). A differenza della Plesiochronous 
+Digital Hierarchy (Gerarchia Digitale Plesiocrona o PDH), il protocollo SDH si basa sul fatto che tutti 
+gli elementi della rete sono tra loro statisticamente sincronizzati con lo stesso clock con una precisione 
+molto elevata (stessa frequenza e stessa fase).\\\\
 In combinazione a ciò, la definizione di una speciale struttura di trama con l'aggiunta di un numero 
 significativo di informazioni di servizio (overhead) permette non solo l'estrazione diretta di un singolo 
 traffico tributario senza dover effettuare la demultiplazione completa dell'intero flusso rendendo la 
 rete molto più flessibile ed efficiente, ma anche il trasferimento di informazioni essenziali per la 
 corretta gestione della rete e per la sua auto-protezione a fronte di guasti o di condizioni anomale o 
-degrado. Il risultato finale è che il protocollo SDH consente di raggiungere elevatissimi livelli di 
-qualità di servizio (disponibilità di servizio del 99,999\%) e notevoli strumenti per il controllo e 
+degrado. Il risultato finale è che il protocollo SDH consente di raggiungere elevatissimi livelli di 
+qualità di servizio (disponibilità di servizio del 99,999\%) e notevoli strumenti per il controllo e 
 monitoraggio in tempo reale dell'intera rete di trasmissione.
 \subsubsection{Struttura di trasporto del payload}
 \paragraph{Administrative Unit (AU)}
@@ -84,19 +84,19 @@ in fase di generazione della trama finale l'AU viene normalmente allocato a part
 dei 261x9 byte destinati al payload. Il riferimento (puntatore) alla posizione della trama in cui viene 
 allocato il primo byte dell'AU viene memorizzato in una posizione fissa dell'overhead di trama, ovvero 
 nelle prime nove colonne della quarta riga. Questa informazione di posizionamento, fondamentale per 
-l'inserimento/estrazione dei tributari dalla trama, costituisce l'Administrative Unit Pointer o AU Pointer. 
-L'insieme dell'Administrative Unit e dell'AU Pointer viene denominato Administrative Unit Group, AUG.
+l'inserimento/estrazione dei tributari dalla trama, costituisce l'Administrative Unit Pointer o AU Pointer. 
+L'insieme dell'Administrative Unit e dell'AU Pointer viene denominato Administrative Unit Group, AUG.
 \paragraph{Virtual Container (VC) e Tributary Unit (TU)}
 \noindent
 \\\\
 All'interno dell'AU, i singoli flussi tributari sono organizzati come sequenza di strutture omogenee 
-denominate Virtual Container, VC (contenitore virtuale). Ciascun VC comprende a sua volta una parte 
+denominate Virtual Container, VC (contenitore virtuale). Ciascun VC comprende a sua volta una parte 
 di informazioni di servizio aggiuntive (path overhead, POH) usate per la gestione, il monitoraggio e la 
 protezione, seguita dal flusso informativo vero e proprio costituito dal tributario adattato alla trama SDH.\\
 Come nel caso dell'AU, il primo byte utile del Virtual Container non ha una posizione prefissata e anche 
 in questo caso si ricorre a un puntatore (Tributary Unit Pointer, TU Pointer) posizionato in modo 
 predeterminato nella trama SDH, che indica il punto di inizio del VC stesso. L'insieme del VC e del suo 
-TU Pointer viene denominato Tributary Unit, TU.\\
+TU Pointer viene denominato Tributary Unit, TU.\\
 A seconda della bit rate dei tributari multiplati si distinguono diversi tipi di Virtual Container: 
 per esempio, VC-12 per un trasporto a 2 Mbit/s; VC-3 per un trasporto a 48 Mb/s; VC-4 per un trasporto 
 a 140 Mb/s. La dimensione in byte dei Virtual Container è predefinita, in funzione della gerarchia di 
@@ -104,10 +104,10 @@ trasporto associata.
 \subsection{ATM}
 \subsubsection{Definizione}
 \noindent
-\textbf{Asynchronous Transfer Mode o ATM} è un protocollo di rete di livello di collegamento dati del modello 
-ISO/OSI che implementa un modo di trasferimento a commutazione di circuito virtuale e trasmissione di 
-cella, incapsulando i dati in unità, dette celle, di lunghezza fissa (53 byte) anziché in pacchetti a 
-lunghezza variabile come avviene invece nelle reti a commutazione di pacchetto (ad esempio con IPv4). 
+\textbf{Asynchronous Transfer Mode o ATM} è un protocollo di rete di livello di collegamento dati del modello 
+ISO/OSI che implementa un modo di trasferimento a commutazione di circuito virtuale e trasmissione di 
+cella, incapsulando i dati in unità, dette celle, di lunghezza fissa (53 byte) anziché in pacchetti a 
+lunghezza variabile come avviene invece nelle reti a commutazione di pacchetto (ad esempio con IPv4). 
 Le reti di telecomunicazioni che implementano il protocollo ATM vengono dette reti ATM.
 \subsubsection{Funzionamento}
 \begin{figure}[H]
@@ -116,27 +116,27 @@ Le reti di telecomunicazioni che implementano il protocollo ATM vengono dette re
     \caption{Formato di una cella ATM}\label{fig:1}
 \end{figure}
 \noindent
-L'unità di trasmissione dei dati di ATM è detta cella, e ha una dimensione fissa di 53 byte, di cui 48 di 
-payload (corpo di dati utili) e 5 di header. La lunghezza fissa e piccola della cella favorisce ritardi 
-di elaborazione costanti e limitati durante la commutazione nei nodi nonché maggiori velocità di 
-trasmissione estremamente vantaggiosi per il supporto alle varie tipologie di traffico.\\\\
-ATM utilizza una tecnica di commutazione a circuito virtuale che lo rende appetibile per reti integrate 
-nei servizi ad alta velocità di trasmissione: prima di inviare i dati si invia un pacchetto di handshake 
-per configurare la connessione. Man mano che questo pacchetto attraversa gli switch ATM, questi calcolano 
+L'unità di trasmissione dei dati di ATM è detta cella, e ha una dimensione fissa di 53 byte, di cui 48 di 
+payload (corpo di dati utili) e 5 di header. La lunghezza fissa e piccola della cella favorisce ritardi 
+di elaborazione costanti e limitati durante la commutazione nei nodi nonché maggiori velocità di 
+trasmissione estremamente vantaggiosi per il supporto alle varie tipologie di traffico.\\\\
+ATM utilizza una tecnica di commutazione a circuito virtuale che lo rende appetibile per reti integrate 
+nei servizi ad alta velocità di trasmissione: prima di inviare i dati si invia un pacchetto di handshake 
+per configurare la connessione. Man mano che questo pacchetto attraversa gli switch ATM, questi calcolano 
 l'instradamento, attribuiscono un identificatore (label) ai pacchetti di questa connessione e riservano 
 risorse per la connessione stessa. A questo punto tutti i successivi pacchetti della connessione seguiranno 
-lo stesso percorso com'è tipico della commutazione di circuito. Per il resto la trasmissione dei dati 
-è segmentata in pacchetti di dimensioni fisse dette celle multiplate in maniera asincrona su canali logici 
-o virtuali diversi per ciascuna connessione.\\\\
+lo stesso percorso com'è tipico della commutazione di circuito. Per il resto la trasmissione dei dati 
+è segmentata in pacchetti di dimensioni fisse dette celle multiplate in maniera asincrona su canali logici 
+o virtuali diversi per ciascuna connessione.\\\\
 Le celle successive verranno identificate sulla base di un'etichetta. Quando una cella raggiunge uno switch, 
 questo dovrà consultare una tabella indicizzata da porta in ingresso ed etichetta, ricavando la porta di 
 uscita e la nuova etichetta da assegnare alla cella. Questa architettura molto semplice facilita 
-l'instradamento in hardware permettendo di realizzare switch ad alta velocità (la commutazione 
+l'instradamento in hardware permettendo di realizzare switch ad alta velocità (la commutazione 
 per etichetta è più veloce rispetto alla commutazione IP basata sull'elaborazione in base a tabelle di 
 routing indicizzate per sottoreti).
-L'etichetta è composta di due valori presenti nell'header di ciascuna cella, VPI e VCI:\\
+L'etichetta è composta di due valori presenti nell'header di ciascuna cella, VPI e VCI:\\
 \begin{itemize}
-    \item Il VPI (Virtual Path Identifier) identifica il path virtuale su cui il circuito virtuale è stato attivato.
+    \item Il VPI (Virtual Path Identifier) identifica il path virtuale su cui il circuito virtuale è stato attivato.
     \item Il VCI (Virtual Channel Identifier) identifica il canale virtuale su cui il circuito virtuale è stato attivato.
 \end{itemize}
 \noindent
@@ -147,9 +147,9 @@ fino a $2\textsuperscript{16}$ VC. Appositi dispositivi hardware, ad esempio swi
 Visto che tutti i pacchetti seguono la stessa strada, è garantita la consegna in ordine, ma non l'integrità 
 informativa ovvero che tutti i pacchetti siano consegnati, perché sono sempre possibili code sugli switch 
 e conseguenti perdite di pacchetti.\\\\
-La velocità di trasmissione possibile va da 2 a 622 Mbps e anche oltre. È questa la velocità adatta alla 
+La velocità di trasmissione possibile va da 2 a 622 Mbps e anche oltre. È questa la velocità adatta alla 
 tv ad alta definizione.\\\\
-ATM consente inoltre di segmentare la banda sui diversi canali virtuali per suddividerla e offrirla ai 
+ATM consente inoltre di segmentare la banda sui diversi canali virtuali per suddividerla e offrirla ai 
 diversi tipi di servizi di trasmissione tramite appunto l'uso dei VCC (VPI:VCI).\\\\
 Per supportare vari tipi di traffico su ATM, e quindi vari tipi e livelli di qualità di servizio, 
 sono stati definiti una varietà di modelli di servizio che si adattano sia al traffico telefonico 
@@ -160,46 +160,46 @@ predeterminate prestazioni, per il particolare servizio utente richiesto.
 Sono possibili due modalità di implementazione di ATM su una rete di telecomunicazioni:\\
 \begin{itemize}
     \item \textbf{LAN Emulation} (LANE): permette di far comunicare tra loro un insieme di terminali che 
-    fanno parte di una stessa sottorete come appartenenti a una rete locale ATM senza utilizzare il 
-    protocollo Ethernet con lo svantaggio però di dover creare connessioni ATM (cioè VC semipermanenti o 
+    fanno parte di una stessa sottorete come appartenenti a una rete locale ATM senza utilizzare il 
+    protocollo Ethernet con lo svantaggio però di dover creare connessioni ATM (cioè VC semipermanenti o 
     automatici). Di fatto la tal cosa non si è realizzata in favore invece delle comuni LAN Ethernet per 
     motivi di costo degli apparati ATM (switch ATM).
     \item \textbf{Classical IP su ATM} (CLIP): appresenta il modello che si è effettivamente affermato e 
-    che consiste in uno schema di trasporto in cui router di interfaccia dialogano tra di loro attraverso 
-    una rete ATM, che funge appunto da rete di trasporto, attraverso l'uso di circuiti virtuali permanenti 
-    col vantaggio aggiunto di garantire QoS agli utenti e possibilità di VPN su scala geografica 
+    che consiste in uno schema di trasporto in cui router di interfaccia dialogano tra di loro attraverso 
+    una rete ATM, che funge appunto da rete di trasporto, attraverso l'uso di circuiti virtuali permanenti 
+    col vantaggio aggiunto di garantire QoS agli utenti e possibilità di VPN su scala geografica 
     (Ipsilon Networks).
 \end{itemize}
 \subsubsection{IP su ATM}
-IP su ATM è stato introdotto all'inizio degli anni novanta per far fronte a esigenze di aumento del 
+IP su ATM è stato introdotto all'inizio degli anni novanta per far fronte a esigenze di aumento del 
 traffico che i router dell'epoca non erano in grado di soddisfare (gli switch ATM offrivano infatti 
-prestazioni fino a 622 Mbit/s) e perché ATM offriva la possibilità di operare ingegneria del trafficoovvero 
-pianificare/decidere come instradare il traffico all'interno della rete di trasporto grazie al meccanismo 
+prestazioni fino a 622 Mbit/s) e perché ATM offriva la possibilità di operare ingegneria del trafficoovvero 
+pianificare/decidere come instradare il traffico all'interno della rete di trasporto grazie al meccanismo 
 dei circuiti virtuali permanenti gestiti dinamicamente, ovvero modificabili a seconda del livello di 
 congestione interno della rete.\\\\
-Per trasportare traffico IP proveniente da una singola sorgente, si usa l'Adaptation Layer 5 (AAL5), 
+Per trasportare traffico IP proveniente da una singola sorgente, si usa l'Adaptation Layer 5 (AAL5), 
 che segmenta il pacchetto IP in celle. AAL5 prevede dunque la possibilità di segmentare pacchetti di 
-dimensioni variabili fino a $2\textsuperscript{16}$ byte su un numero sufficiente di celle ATM con un overheadminimo. 
-Ogni pacchetto AAL5 (CPCS-PDU) è coperto da un CRC per la rilevazione degli errori. Quindi, intendiamo 
-per PDU l'insieme di celle ATM che trasportano questo pacchetto. Per ogni PDU, AAL5 ha un overhead di 8 
-byte che si inserisce come trailer della PDU. Mentre un pacchetto AAL5 verrà trasmesso su più celle in 
+dimensioni variabili fino a $2\textsuperscript{16}$ byte su un numero sufficiente di celle ATM con un overheadminimo. 
+Ogni pacchetto AAL5 (CPCS-PDU) è coperto da un CRC per la rilevazione degli errori. Quindi, intendiamo 
+per PDU l'insieme di celle ATM che trasportano questo pacchetto. Per ogni PDU, AAL5 ha un overhead di 8 
+byte che si inserisce come trailer della PDU. Mentre un pacchetto AAL5 verrà trasmesso su più celle in 
 AAL2, una cella potrà trasportare più pacchetti AAL2. Questa pratica comporta, però, un maggior carico 
-di overhead sulla rete, dunque perdita di efficienza (Goodput).\\\\
+di overhead sulla rete, dunque perdita di efficienza (Goodput).\\\\
 Questa soluzione ha perso definitivamente i suoi vantaggi quando, con l'aumento delle prestazioni di 
 elaborazione dei router IP fino al superamento delle capacità degli switch ATM, ATM ha mostrato tutti 
 i suoi limiti in termini di gestione contemporanea di due diverse tipologie di rete (IP sopra e ATM 
-sotto), nonché il problema del cablaggio che aumentava col quadrato dei terminali per le topologie 
+sotto), nonché il problema del cablaggio che aumentava col quadrato dei terminali per le topologie 
 a maglia completa adottate da ATM e quello intimamente connesso in termini di elaborazione, 
-memorizzazione ed efficienza delle informazioni fornite dei protocolli di routing.\\\\
-La nuova tecnologia di rete di trasporto che si è affermata è stata dunque IP over SDH/SONET e 
-successivamente IP su MPLS su SDH/SONET.
+memorizzazione ed efficienza delle informazioni fornite dei protocolli di routing.\\\\
+La nuova tecnologia di rete di trasporto che si è affermata è stata dunque IP over SDH/SONET e 
+successivamente IP su MPLS su SDH/SONET.
 \subsection{MPLS}
 \subsubsection{Definizione}
-Multiprotocol Label Switching (MPLS) è una tecnologia per reti IP che permette di instradare flussi di 
-traffico multiprotocollo tra nodo di origine (Ingress Node) e nodo di destinazione (Egress Node) tramite 
-l'utilizzo di identificativi (label) tra coppie di router adiacenti e semplici operazioni sulle etichette 
+Multiprotocol Label Switching (MPLS) è una tecnologia per reti IP che permette di instradare flussi di 
+traffico multiprotocollo tra nodo di origine (Ingress Node) e nodo di destinazione (Egress Node) tramite 
+l'utilizzo di identificativi (label) tra coppie di router adiacenti e semplici operazioni sulle etichette 
 stesse. Le specifiche tecniche del protocollo sono state pubblicate dall'Internet Engineering Task 
-Force nell'RFC 3031 e nell'RFC 3032.
+Force nell'RFC 3031 e nell'RFC 3032.
 \subsubsection{Introduzione}
 MPLS è una tecnologia che prevede la determinazione di un percorso determinato per tutti i pacchetti 
 di una comunicazione
@@ -284,23 +284,23 @@ Protocol” (LDP) per stabilire tali immissioni.
 \end{itemize}
 \section{Metasploit}
 \subsection{Penetration Test}
-Il penetration test è il processo operativo di valutazione della sicurezza di un sistema o di una rete che 
+Il penetration test è il processo operativo di valutazione della sicurezza di un sistema o di una rete che 
 simula l'attacco di un utente malintenzionato. L'analisi comprende più fasi ed ha come obiettivo evidenziare 
 le debolezze della piattaforma fornendo il maggior numero di informazioni sulle vulnerabilità che ne hanno 
 permesso l'accesso non autorizzato. L'analisi è condotta dal punto di vista di un potenziale attaccante e 
 consiste nello sfruttamento delle vulnerabilità rilevate al fine di ottenere più informazioni possibili 
-per accedere indebitamente al sistema. Il penetration test fornisce una stima chiara sulle capacità di 
-difesa e del livello di penetrazione raggiunto nei confronti: 
+per accedere indebitamente al sistema. Il penetration test fornisce una stima chiara sulle capacità di 
+difesa e del livello di penetrazione raggiunto nei confronti: 
 \begin{itemize}
     \item delle vulnerabilità interne al sistema,
     \item delle vulnerabilità esterne al sistema,
     \item della sicurezza fisica.
 \end{itemize}
-\subsection{Procedura Black \& White Box}
-I processi di penetration test possono essere effettuati in diverse modalità. La differenza consiste 
+\subsection{Procedura Black \& White Box}
+I processi di penetration test possono essere effettuati in diverse modalità. La differenza consiste 
 sulla quantità e qualità delle informazioni disponibili agli analisti riguardo ai sistemi analizzati.
 \begin{itemize}
-    \item \textbf{Black Box:} non presuppongono precedente conoscenza dell'infrastruttura oggetto di analisi 
+    \item \textbf{Black Box:} non presuppongono precedente conoscenza dell'infrastruttura oggetto di analisi 
     e gli esaminatori necessitano di determinare architettura e servizi dei sistemi prima di iniziare l'analisi.
     \item \textbf{White Box:} sono invece fornite conoscenze dettagliate dell'infrastruttura da esaminare, 
     spesso comprensive di schemi di rete, codice sorgente delle applicazioni e liste di indirizzi 
@@ -310,33 +310,33 @@ sulla quantità e qualità delle informazioni disponibili agli analisti riguardo
 \subsection{Analisi dell’architettura e rilevazione delle vulnerabilità}
 Vengono acquisite inizialmente le informazioni principali sull'architettura della piattaforma e sui servizi 
 offerti. Dall'analisi di questi dati deriva la scelta di come condurre il passo successivo, consistente in 
-una enumerazione dei principali errori e problemi. 
+una enumerazione dei principali errori e problemi. 
 \subsection{Attacco e redazione di un report}
 L'attività si conclude nello sviluppo della reportistica composta dal report di analisi sommaria dedicato 
-al management o executive summary, contenente l'analisi dell'impatto di rischio di quanto riscontrato e 
+al management o executive summary, contenente l'analisi dell'impatto di rischio di quanto riscontrato e 
 tempistiche per l'azione di rientro o mitigazione delle problematiche riscontrate, e dal report tecnico, 
-contenente l'analisi dettagliata dei problemi e la soluzione tecnica. 
-\subsection{Kali linux}
-OS basato sulla distribuzione Debian GNU/Linux, permette di testare penetration testing OS, rewrite of 
-BackTrack Linux e sviluppare sicurezza preventiva o offensiva. Ha più di 300 tool di supporto, è 
+contenente l'analisi dettagliata dei problemi e la soluzione tecnica. 
+\subsection{Kali linux}
+OS basato sulla distribuzione Debian GNU/Linux, permette di testare penetration testing OS, rewrite of 
+BackTrack Linux e sviluppare sicurezza preventiva o offensiva. Ha più di 300 tool di supporto, è 
 multilingua, è personalizzabile e flessibile, e ha una grande community per il supporto.
-\subsubsection{Tool principali} 
+\subsubsection{Tool principali} 
 \begin{itemize}
-    \item Metasploit: security assesment framework
-    \item NMAP: network scanner 
-    \item John The Ripper \& Hashcat: password cracker
+    \item Metasploit: security assesment framework
+    \item NMAP: network scanner 
+    \item John The Ripper \& Hashcat: password cracker
     \item Aircrack-ng: Wi-Fi crack
-    \item Hydra: brute force attacks
-    \item Maltego: information gathering
+    \item Hydra: brute force attacks
+    \item Maltego: information gathering
     \item Nikto: web scanner
     \item SET: Social Engineering Toolkit
-    \item Bettercap: MITM attacks 
+    \item Bettercap: MITM attacks 
 \end{itemize}
-\subsection{Metasploit framework}
-Si tratta di uno strumento open source per lo sviluppo e l'esecuzione di exploits ai danni di una macchina 
-remota. È caratterizzato da: interfaccia a linea di comando, import da terze parti, exploitation manuale e 
-azioni di forza bruta anch’esse condotte manualmente. Questa versione di Metasploit Project include anche 
-Zenmap, un famoso port scanner, e un compilatore per Ruby, il linguaggio usato per questa versione. 
+\subsection{Metasploit framework}
+Si tratta di uno strumento open source per lo sviluppo e l'esecuzione di exploits ai danni di una macchina 
+remota. È caratterizzato da: interfaccia a linea di comando, import da terze parti, exploitation manuale e 
+azioni di forza bruta anch’esse condotte manualmente. Questa versione di Metasploit Project include anche 
+Zenmap, un famoso port scanner, e un compilatore per Ruby, il linguaggio usato per questa versione. 
 \begin{figure}[H]
     \center
     \includegraphics[scale=0.2]{images/SchemaMetasploit.png}
@@ -347,14 +347,14 @@ Un exploit è una tipologia di script, virus, worm, porzione di dati o binario c
 o una vulnerabilità per creare comportamenti non previsti in software, hardware, o in sistemi elettronici, 
 ad es. per ottenere l'accesso a sistemi informatici, permettere l'acquisizione dei privilegi amministrativi, 
 o attacchi denial of service (DoS o il correlato DDoS). \\\\
-\textbf{I passaggi fondamentali per l'exploiting di un sistema utilizzando Metasploit Framework comprendono:}
+\textbf{I passaggi fondamentali per l'exploiting di un sistema utilizzando Metasploit Framework comprendono:}
 \begin{enumerate}
-    \item Scegliere e configurare un \textbf{exploit} (codice che penetra in un sistema sfruttandone i bugs). 
+    \item Scegliere e configurare un \textbf{exploit} (codice che penetra in un sistema sfruttandone i bugs). 
     \item Controllare se il sistema attaccato è suscettibile all’exploit selezionato (facoltativo).
-    \item Scegliere e configurare un \textbf{payload} (codice da eseguire sul sistema attaccato dopo esserci 
+    \item Scegliere e configurare un \textbf{payload} (codice da eseguire sul sistema attaccato dopo esserci 
     penetrati con successo; per esempio una shell remota o un VNC server).
-    \item Scegliere la tecnica di codifica in modo che l’intrusion prevention system (IPS) ignori il payload 
-    codificato. 
+    \item Scegliere la tecnica di codifica in modo che l’intrusion prevention system (IPS) ignori il payload 
+    codificato. 
     \item Eseguire l’exploit.
 \end{enumerate}
 \subsubsection{Metasploit Auxiliary Modules}
@@ -412,25 +412,237 @@ o attacchi denial of service (DoS o il correlato DDoS). \\\\
     di "correttezza". Come un database danneggiato, risultati di ricerca scadenti, ecc.
 \end{itemize}
 \section{Fibra ottica}
+\subsection{Storia}
+\begin{itemize}
+    \item 1930: prime idee riguardo la trasmissione di immagini su fibra
+    \item Anni ’60: laser introdotti come sorgenti di luce efficienti
+    \item Anni ’70: ricerca su quanto si perde nelle fibre di vetro
+    \item Anni ’80: ricerca nello sviluppo di fibre di vetro con rivestimento di vetro separatore.
+    \begin{itemize}
+    \item Regione interna: trasmissione. 
+    \item Regione esterna: non permette alla luce di uscire e riflette la luce nei confini del nucleo
+    \end{itemize}
+    \item Anni ’90: forte produzione di dispositivi ottici e fibre ottiche per trasmissione ad alta velocità
+    \item Oggi: Fibre e dispositivi ottici utilizzati in molti ambiti, dall’ambiente medico a trasmissione d’industria. Trasmissione segnali vocali, televisivi e immagini o dati attraverso sottili fili flessibili di vetro o plastica
+\end{itemize}
+\subsection{Dettagli}
+\begin{itemize}
+    \item Poca perdita: 0.2 dB/km
+    \item Banda larga: 10 Tbps
+    \item No cross-talk tra fibre
+    \item Quasi impossibile fare sniffing
+    \item Immune a rumore elettromagnetico
+    \item Separazione galvanica tra le reti
+    \item Lunghe distanze
+    \item Filtri ottici: costosi ma alta velocità
+\end{itemize}
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[c]{\linewidth}
+        \begin{minipage}[l]{0.48\linewidth}
+            \includegraphics[width=\linewidth]{images/FO1.png}
+		    \caption{Attenuazione}\label{fig:1}
+        \end{minipage}
+        \hspace{0.04\linewidth}
+        \begin{minipage}[l]{0.48\linewidth}
+            \includegraphics[width=\linewidth]{images/FO2.png}
+           	\caption{Light Generation and Reception}\label{fig:1}
+        \end{minipage}
+    \end{minipage}
+\end{figure}
+\subsection{Tipi di fibra}
+\begin{itemize}
+	\item Multi mode: ampio nucleo ottico (50 micron). Distanza x Bandwidth $<$ 500 Mbit/s.km es: 1 Gbit/s can travel only 500 metres, 2.5 Gbit/s can travel only 200 metres etc. Corte distanze e velocità ridotta. Solo dentro edifici. Non supporta DWDM.
+	\item Single mode: nucleo ottico stretto ( 5 micron = 0.005 mm di diametro). Raccomandata per le nuove implementazioni. distance x bandwidth $>$ 10 Gbit/s.km. distance limited by chromatic dispersion where BW $>$ 1Gbit/s distance limited by attenuation where BW $<$ 1Gbit/s
+\end{itemize}
+\begin{figure}[H]
+    \begin{minipage}[c]{\linewidth}
+        \centering
+        \begin{minipage}[l]{0.36\linewidth}
+            \includegraphics[width=\linewidth]{images/FO3.png}
+		    %\caption{Optical Fiber Structure}\label{fig:1}
+        \end{minipage}
+        \hspace{0.04\linewidth}
+        \begin{minipage}[l]{0.30\linewidth}
+            \includegraphics[width=\linewidth]{images/FO4.png}
+           	%\caption{Effects on the optical signal}\label{fig:1}
+        \end{minipage}
+    \end{minipage}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[c]{\linewidth}
+        \begin{minipage}[l]{0.48\linewidth}
+            \includegraphics[width=\linewidth]{images/FO5.png}
+		    \caption{Attenuation: Wavelenght Dependence}\label{fig:1}
+        \end{minipage}
+        \hspace{0.04\linewidth}
+        \begin{minipage}[l]{0.48\linewidth}
+            \includegraphics[width=\linewidth]{images/FO6.png}
+           	\caption{Attenuation and Dispersion}\label{fig:1}
+        \end{minipage}
+    \end{minipage}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[c]{\linewidth}
+        \begin{minipage}[l]{0.48\linewidth}
+            \includegraphics[width=\linewidth]{images/FO7.png}
+        \end{minipage}
+        \hspace{0.04\linewidth}
+        \begin{minipage}[l]{0.48\linewidth}
+            \includegraphics[width=\linewidth]{images/FO8.png}
+        \end{minipage}
+        \caption{Dispersion - pulse spreads as it travels!!}\label{fig:1}
+    \end{minipage}
+\end{figure}
+\subsection{Tipi di dispersione}
+\begin{itemize}
+	\item Modale: problema delle fibre multimode. La luce rimbalza su diversi percorsi nel nucleo della fibra. Limita nel multimode il BANDWIDTHxDISTANCE $<$ 500 MHz.km
+    \item Cromatica (Chromatic): ogni colore della luce ha una velocità leggermente diversa nella fibra. Un impulso si diffonde mentre viaggia lungo una fibra. Importante quando BANDWIDTHxDISTANCE $>$ 10 Gbit/s.km
+    \item Polarization Mode: importante nei sistemi a lungo raggio
+\end{itemize}
+\subsection{Cosa fare contro la dispersione cromatica}
+\begin{tabular}{p{0.5\linewidth} p{0.5\linewidth}}
+ 	\vspace{0pt} 
+    \begin{itemize}
+		\item Design fiber for low dispersion: DSF, NZ-DSF
+		\begin{itemize}
+		\item Dispersion below 5 ps/nm/Km for both types of Fibers
+		\item Non-Linear Effects in DSF: ZDW coincide with EDFA Gain
+Window
+		\item Cost is increased
+		\end{itemize}
+		\item Use Externally-Modulated Transmitters
+		\begin{itemize}
+			\item Reduction of Chirp
+			\item Signal Pre-distortion (pre-chirp)
+		\end{itemize}
+		\item Use a Dispersion Compensation Module (DCM)
+		\begin{itemize}
+			\item  Use to manage dispersion in a long link
+			\item Very effective, permits trans-oceanic dispersion control
+			\item Must engineer dispersion management maps
+		\end{itemize}
+		Chromatic dispersion can be managed cost effectively
+	\end{itemize}
+    &
+    \vspace{-0.5cm} 
+    \begin{figure}[H]
+		\includegraphics[width=0.5\linewidth]{images/FO9.png}
+	\end{figure}
+\end{tabular}
+\pagebreak
+\subsection{Altri problemi sul segnale ottico}
+La distanza della luce dipende da: attenuazione, dispersione e non linearità delle fibre tra cui:
+\begin{itemize}
+	\item  Stimulated Brillouin Scattering (SBS)
+	\item Self phase modulation (SPM)
+	\item Polarization mode dispersion (PMD)
+	\item Cross phase modulation (XPM)
+	\item Four wave mixing (FWM)
+\end{itemize}
+\subsection{Sorgenti}
+Laser (molto selettivi quasi monocromatici, concentrando tutta la potenza su un singolo lambda) e diodi che emettono luce. Modulare segnali elettrici in ottici e si modula a 3 regioni di lunghezza d’onda: 850 nm, 1300 nm e 1550 nm. I laser emettono luce ad alta frequenza e intensità. I LED sono più economici.
+\begin{figure}[H]
+	\center
+	\includegraphics[scale=0.35]{images/FO10.png}
+    \caption{Tx - Components}\label{fig:1}
+\end{figure}
+\subsection{Ricevitori}
+Devono essere molto sensibili e in grado di raccogliere e amplificare i segnali di nanowatt. Sono fotodiodi e fototransistor. Vengono accesi dalla luce.
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[c]{\linewidth}
+        \begin{minipage}[l]{0.48\linewidth}
+            \includegraphics[width=\linewidth]{images/FO11.png}
+        \end{minipage}
+        \hspace{0.04\linewidth}
+        \begin{minipage}[l]{0.48\linewidth}
+            \includegraphics[width=\linewidth]{images/FO12.png}
+        \end{minipage}
+        \caption{RX - Components}\label{fig:1}
+    \end{minipage}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[c]{\linewidth}
+        \begin{minipage}[l]{0.48\linewidth}
+            \includegraphics[width=\linewidth]{images/FO13.png}
+        \end{minipage}
+        \hspace{0.04\linewidth}
+        \begin{minipage}[l]{0.48\linewidth}
+            \includegraphics[width=\linewidth]{images/FO14.png}
+        \end{minipage}
+    \end{minipage}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[c]{\linewidth}
+        \begin{minipage}[l]{0.43\linewidth}
+            \includegraphics[width=\linewidth]{images/FO15.png}
+        \end{minipage}
+        \hspace{0.04\linewidth}
+        \begin{minipage}[l]{0.53\linewidth}
+            \includegraphics[width=\linewidth]{images/FO16.png}
+        \end{minipage}
+    \end{minipage}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[c]{\linewidth}
+        \begin{minipage}[l]{0.43\linewidth}
+            \includegraphics[width=\linewidth]{images/FO17.png}
+        \end{minipage}
+        \hspace{0.04\linewidth}
+        \begin{minipage}[l]{0.53\linewidth}
+            \includegraphics[width=\linewidth]{images/FO18.png}
+        \end{minipage}
+    \end{minipage}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[c]{\linewidth}
+        \begin{minipage}[l]{0.43\linewidth}
+            \includegraphics[width=\linewidth]{images/FO19.png}
+        \end{minipage}
+        \hspace{0.04\linewidth}
+        \begin{minipage}[l]{0.53\linewidth}
+            \includegraphics[width=\linewidth]{images/FO20.png}
+        \end{minipage}
+    \end{minipage}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
 
 \section{Buffer overflow}
-Il microprocessore è una tipologia particolare di circuito elettronico che si contraddistingue per 
-essere interamente costituita da uno o più circuiti integrati di dimensioni molto ridotte. 
-La tecnologia a microprocessore è attualmente quella più utilizzata per la realizzazione della CPU e 
-della GPU (montate direttamente su una scheda madre, con la caratteristica di utilizzare, per tutte 
+Il microprocessore è una tipologia particolare di circuito elettronico che si contraddistingue per 
+essere interamente costituita da uno o più circuiti integrati di dimensioni molto ridotte. 
+La tecnologia a microprocessore è attualmente quella più utilizzata per la realizzazione della CPU e 
+della GPU (montate direttamente su una scheda madre, con la caratteristica di utilizzare, per tutte 
 le sue elaborazioni, un insieme di istruzioni fondamentali di base (instruction set).\\\\
 Si può trovare una lista di tutti i microprocessori della Intel, dal 4-bit Intel 4004 fino ai più 
 moderni, al seguente link: \url{https://en.wikipedia.org/wiki/List_of_Intel_microprocessors}. \\
 Per confrontarli invece si può andare su \url{https://en.wikipedia.org/wiki/Comparison_of_Intel_processors}.
 \subsection{Intel i386}
-Detto anche i80386, è una famiglia di microprocessori monolitici general purpose x86 dell'Intel Corporation 
-prodotti tra il 1985 e il 2007. Le schede madri che supportavano i microprocessori Intel i386 erano 
+Detto anche i80386, è una famiglia di microprocessori monolitici general purpose x86 dell'Intel Corporation 
+prodotti tra il 1985 e il 2007. Le schede madri che supportavano i microprocessori Intel i386 erano 
 molto complesse e costose, paragonate a quelle per i suoi predecessori, ma l'adozione su larga scala 
 dei microprocessori Intel i386 ne favorì la diffusione. I microprocessori della famiglia Intel i386 
-sono stati i primi microprocessori Intel dotati di architettura a 32 bit e modalità protetta con 
-supporto hardware alla memoria virtuale paginata. Il successo e il basso costo di questi microprocessori 
-permisero quindi la diffusione su personal computer dei primi sistemi operativi operanti in modalità 
-protetta. L'Intel i386 fu anche la famiglia di microprocessori su cui nacque il kernel Linux.\\\\
+sono stati i primi microprocessori Intel dotati di architettura a 32 bit e modalità protetta con 
+supporto hardware alla memoria virtuale paginata. Il successo e il basso costo di questi microprocessori 
+permisero quindi la diffusione su personal computer dei primi sistemi operativi operanti in modalità 
+protetta. L'Intel i386 fu anche la famiglia di microprocessori su cui nacque il kernel Linux.\\\\
 Offre 16 registri di interesse al programmatore, i quali possono essere raggruppati nelle seguenti categorie:
 \begin{figure}[H]
     \center
@@ -449,26 +661,26 @@ Offre 16 registri di interesse al programmatore, i quali possono essere raggrupp
 \subsection{Tipi di buffer overflow}
 \subsubsection{Buffer overflow della heap}
 La memoria heap viene allocata in maniera dinamica dalle applicazioni run-time e solitamente contiene 
-dati dei programmi utente. Gli heap overflow vengono solitamente usati dai cracker per abusare di 
+dati dei programmi utente. Gli heap overflow vengono solitamente usati dai cracker per abusare di 
 programmi contenenti alcune vulnerabilità dovute ad insufficiente validazione degli input, calcolo 
 sbagliato della memoria da allocare o superamento del limite massimo di memoria allocabile. 
 L'attacco avviene come segue: se un'applicazione copia dei dati senza preventivamente controllare 
 se trovano posto nella variabile di destinazione, il cracker può fornire al programma un insieme di 
-dati troppo grande per essere gestito correttamente, andando così a sovrascrivere i metadati (cioè le 
+dati troppo grande per essere gestito correttamente, andando così a sovrascrivere i metadati (cioè le 
 informazioni di gestione) della heap, prossimi alla destinazione dell'insieme di dati. In questo modo, 
 l'attaccante può sovrascrivere una locazione arbitraria di memoria, con una piccola quantità di dati. 
 Nella maggior parte degli ambienti, questo può fornire all'attaccante il controllo dell'esecuzione del 
 programma. 
 \subsubsection{Buffer overflow dello stack}
 lo stack è un’area di memoria in cui vengono salvate le variabili locali e i parametri passati alla funzione 
-(gestito come LIFO). Qui i dati adiacenti al buffer che potrebbero essere sovrascritti dai dati extra sono 
+(gestito come LIFO). Qui i dati adiacenti al buffer che potrebbero essere sovrascritti dai dati extra sono 
 il return address e il frame pointer. Se i dati in eccesso sovrascrivono frame pointer e return address, 
 al termine dell’esecuzione la funzione tenterebbe di restituire il controllo all’istruzione puntata dal 
 return address che potrebbe contenere:
 \begin{itemize}
     \item L’indirizzo di un’area di memoria non accessibile: i dati in eccesso sono casuali, il programma 
-    va in crash restituendo tipicamente un segmentation fault. È un esempio di come lo stack buffer 
-    overflow possa essere utilizzato come attacco del tipo denial-of-service (DoS), compromettendo la 
+    va in crash restituendo tipicamente un segmentation fault. È un esempio di come lo stack buffer 
+    overflow possa essere utilizzato come attacco del tipo denial-of-service (DoS), compromettendo la 
     disponibilità del servizio colpito.
     \item Un indirizzo di memoria ben preciso: i dati in eccesso sono calcolati in modo da sovrascrivere 
     il return address con l’indirizzo di un’area di memoria a cui l’attaccante vuole avere accesso, o con 
@@ -481,13 +693,13 @@ return address che potrebbe contenere:
 \end{figure}
 \subsubsection{Integer overflow}
 Ovvero quando viene sorpassato il limite massimo per un Integer, che è 2dimensione in bit -1. 
-Con len1 = len2 = 2147483648 = 231, l’operazione di somma len1 + len2 avrà quindi come risultato il 
-valore 2147483648 + 2147483648 = 4294967296 = $2\textsuperscript{32}$. È proprio qui che si genera l’integer overflow. 
-Il valore risultato della somma è troppo grande per essere memorizzato in una varabile di tipo int. 
-Cosa succede quindi al programma? Il valore corretto viene troncato a 32 bit: nel nostro caso 4294967296 
-diventa 0 che finisce col superare agevolmente il test dell’if e le due operazioni di memcpy vanno a 
-sovrascrivere una zona di memoria superiore a quella allocata. In conclusione, alla funzione memcpy viene 
-consentita la sovrascrittura dello stack ricadendo così nel più classico buffer overflow sullo stack del processo.
+Con len1 = len2 = 2147483648 = 231, l’operazione di somma len1 + len2 avrà quindi come risultato il 
+valore 2147483648 + 2147483648 = 4294967296 = $2\textsuperscript{32}$. È proprio qui che si genera l’integer overflow. 
+Il valore risultato della somma è troppo grande per essere memorizzato in una varabile di tipo int. 
+Cosa succede quindi al programma? Il valore corretto viene troncato a 32 bit: nel nostro caso 4294967296 
+diventa 0 che finisce col superare agevolmente il test dell’if e le due operazioni di memcpy vanno a 
+sovrascrivere una zona di memoria superiore a quella allocata. In conclusione, alla funzione memcpy viene 
+consentita la sovrascrittura dello stack ricadendo così nel più classico buffer overflow sullo stack del processo.
 \begin{figure}[H]
     \center
     \includegraphics[scale=0.2]{images/BO3.png}
@@ -498,7 +710,7 @@ Quando nei sistemi di print (ad es. in C) si usano delle formattazioni o ne veng
 Es. printf("\%s\%s\%s\%s\%s\%s\%s\%s\%s\%s\%s"); Ogni "\%s" cerca di visualizzare il contenuto di un buffer di 
 caratteri dall'indirizzo iniziale presente sullo stack fino al carattere terminatore ("0"). Inserendo quindi molti 
 “\%s", la funzione sposterà il puntatore in avanti fino ad aree di memoria non mappate nel frame dell'applicazione, 
-così facendo cercherà di leggere da "indirizzi illegali", causando l'errore “segmentation fault” che manda in 
+così facendo cercherà di leggere da "indirizzi illegali", causando l'errore “segmentation fault” che manda in 
 crash il programma.
 \subsection{Stack pointer}
 Ci sono 3 tipologie di puntatori alla memoria stack (la quale cresce verso il basso):
@@ -548,16 +760,16 @@ per fare degli esperimenti di correzione di un bug o capire cosa sia successo. \
 \subsection{Motivazioni per il Reverse Code Engineering}
 \noindent
 \textbf{Hacking / Cracking:}
-L'hacking è l'insieme dei metodi, delle tecniche e delle operazioni volte a conoscere, accedere e 
-modificare un sistema informatico hardware o software, Con \textbf{cracking} si intende la modifica di un 
-software per rimuovere la protezione dalla copia, oppure per ottenere accesso ad un'area altrimenti 
+L'hacking è l'insieme dei metodi, delle tecniche e delle operazioni volte a conoscere, accedere e 
+modificare un sistema informatico hardware o software, Con \textbf{cracking} si intende la modifica di un 
+software per rimuovere la protezione dalla copia, oppure per ottenere accesso ad un'area altrimenti 
 riservata. La distribuzione di software così reso privo di protezione è generalmente un'azione 
-illegale a causa della violazione di un copyright. Il crack viene spesso ottenuto tramite il 
+illegale a causa della violazione di un copyright. Il crack viene spesso ottenuto tramite il 
 reverse engineering, tecnica che permette di capire la logica del software analizzando il suo 
-funzionamento e le risposte a determinati input.\\\\
+funzionamento e le risposte a determinati input.\\\\
 \textbf{Debugging:}
-Un debugger in informatica è un programma/software specificatamente progettato per l'analisi e 
-l'eliminazione dei bug (debugging), ovvero errori di programmazione interni al codice di altri programmi.\\\\
+Un debugger in informatica è un programma/software specificatamente progettato per l'analisi e 
+l'eliminazione dei bug (debugging), ovvero errori di programmazione interni al codice di altri programmi.\\\\
 \textbf{Software (Malware) analysis:}
 L'analisi dei malware consiste nello studio delle funzionalità, dell'origine e dell'impatto di un dato 
 campione di malware, come virus, worm, trojan, rootkit o backdoor. Per malware o software dannoso si 
@@ -977,7 +1189,8 @@ Le botnets si sono evolute in modo da amplificare il loro raggio d’azione:
     \item Memcached attack l’attaccante dirotta verso una vittima, le risposte alle richieste che vengono effettuate ad un memcached 
     server( server basato su un database di cache per aumentare la velocità di reti e siti web), così andando ad “allagare” tutte le 
     risorse della vittima. Quando anche la rete viene sovraccaricata, le richieste non possono più essere fatte e non è più possibile 
-    accedere alle risorse internet, in questo caso ci si trova in una situazione di denial-of-service
+    accedere alle risorse internet, in questo caso ci si trova in una situazione di denial-of-service.
+    \item Si possono fare delle richieste pesanti ai DNS Resolver (es. dammi tutti gli indirizzi di tutti i domini appartenenti a supsi.ch). Questi ritorneranno più domini, che possono essere molti nel caso di domini più grandi. Ciò significa che con una semplice richiesta si può ottenere una risposta grande e pesante e se questa richiesta viene fatta da moltissimi zombie, allora i DNS Resolver dovranno rispondere pesantemente a tutti, quindi il database o la CPU potrebbe risentirne molto.
 \end{itemize}
 \textbf{Record di attacco DDoS = 1.7 Tbps} \\
 Chiave di sicurezza:
