@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.3.7)  20 MAY 2019 21:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.3.7)  21 MAY 2019 13:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -6,10 +6,18 @@ entering extended mode
 **/home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/doc.tex
 (/home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/doc.tex
 LaTeX2e <2018-12-01>
-(/usr/share/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
-(/usr/share/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+(/usr/share/texmf-dist/tex/latex/extsizes/extarticle.cls
+Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/extsizes/size8.clo
+File: size8.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
+) (/usr/share/texmf-dist/tex/latex/base/exscale.sty
+Package: exscale 2018/09/24 v2.1i Standard LaTeX package exscale
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+\big@size=\dimen102
 )
 \c@part=\count80
 \c@section=\count81
@@ -21,7 +29,7 @@ File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 \c@table=\count87
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
-\bibindent=\dimen102
+\bibindent=\dimen103
 ) (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2018/12/01 v2.17b AMS math features
 \@mathmargin=\skip43
@@ -32,10 +40,10 @@ Package: amstext 2000/06/29 v2.01 AMS text
  (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks14
-\ex@=\dimen103
+\ex@=\dimen104
 )) (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen104
+\pmbraise@=\dimen105
 ) (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
@@ -51,7 +59,7 @@ LaTeX Info: Redefining \dots on input line 485.
 LaTeX Info: Redefining \cdots on input line 606.
 \Mathstrutbox@=\box27
 \strutbox@=\box28
-\big@size=\dimen105
+\big@size=\dimen106
 LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
 \macc@depth=\count93
@@ -64,12 +72,12 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
 \column@=\count98
 \maxfields@=\count99
 \andhelp@=\toks16
-\eqnshift@=\dimen106
-\alignsep@=\dimen107
-\tagshift@=\dimen108
-\tagwidth@=\dimen109
-\totwidth@=\dimen110
-\lineht@=\dimen111
+\eqnshift@=\dimen107
+\alignsep@=\dimen108
+\tagshift@=\dimen109
+\tagwidth@=\dimen110
+\totwidth@=\dimen111
+\lineht@=\dimen112
 \@envbody=\toks17
 \multlinegap=\skip44
 \multlinetaggap=\skip45
@@ -84,14 +92,14 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \lst@gtempboxa=\box29
 \lst@token=\toks20
 \lst@length=\count101
-\lst@currlwidth=\dimen112
+\lst@currlwidth=\dimen113
 \lst@column=\count102
 \lst@pos=\count103
-\lst@lostspace=\dimen113
-\lst@width=\dimen114
+\lst@lostspace=\dimen114
+\lst@width=\dimen115
 \lst@newlines=\count104
 \lst@lineno=\count105
-\lst@maxwidth=\dimen115
+\lst@maxwidth=\dimen116
  (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
 \c@lstnumber=\count106
@@ -138,8 +146,8 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 )
-\Gin@req@height=\dimen116
-\Gin@req@width=\dimen117
+\Gin@req@height=\dimen117
+\Gin@req@width=\dimen118
 ) (/usr/share/texmf-dist/tex/latex/titling/titling.sty
 Package: titling 2009/09/04 v2.1d maketitle typesetting
 \thanksmarkwidth=\skip46
@@ -153,19 +161,22 @@ Package: inputenc 2018/08/11 v1.3c Input encoding file
 Package: babel 2018/11/13 3.27 The Babel package
  (/usr/share/texmf-dist/tex/generic/babel/switch.def
 File: switch.def 2018/11/13 3.27 Babel switching mechanism
-) (/usr/share/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2017/06/06 v3.3r English support from the babel system
+) (/usr/share/texmf-dist/tex/generic/babel-italian/italian.ldf
+Language: italian 2019/01/05 v.1.4.01 Italian support for the babel system
  (/usr/share/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2018/11/13 3.27 Babel common definitions
 \babel@savecnt=\count108
-\U@D=\dimen118
+\U@D=\dimen119
  (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@dirlevel=\count109
 )
-\l@canadian = a dialect from \language\l@american 
-\l@australian = a dialect from \language\l@british 
-\l@newzealand = a dialect from \language\l@british 
-)) (/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\it@lettering=\count110
+\it@doublequoteactive=\count111
+\it@ISOcompliance=\count112
+)) (/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count113
+) (/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footers
 \f@nch@headwidth=\skip49
 \f@nch@O@elh=\skip50
@@ -368,7 +379,6 @@ Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
 Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
 Package: xcolor-patch 2016/05/16 xcolor patch
 Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
-Package atveryend Info: \enddocument detected (standard20110627).
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
@@ -379,15 +389,15 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 ) (/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen119
-\Hy@linkcounter=\count110
-\Hy@pagecounter=\count111
+\@linkdim=\dimen120
+\Hy@linkcounter=\count114
+\Hy@pagecounter=\count115
  (/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count112
+\Hy@SavedSpaceFactor=\count116
  (/usr/share/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
@@ -398,16 +408,16 @@ Package hyperref Info: Plain pages OFF on input line 4534.
 Package hyperref Info: Backreferencing OFF on input line 4539.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4772.
-\c@Hy@tempcnt=\count113
+\c@Hy@tempcnt=\count117
  (/usr/share/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5125.
-\XeTeXLinkMargin=\dimen120
-\Fld@menulength=\count114
-\Field@Width=\dimen121
-\Fld@charsize=\dimen122
+\XeTeXLinkMargin=\dimen121
+\Fld@menulength=\count118
+\Field@Width=\dimen122
+\Fld@charsize=\dimen123
 Package hyperref Info: Hyper figures OFF on input line 6380.
 Package hyperref Info: Link nesting OFF on input line 6385.
 Package hyperref Info: Hyper index ON on input line 6388.
@@ -417,15 +427,15 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6405.
 Package hyperref Info: PDF/A mode OFF on input line 6410.
 LaTeX Info: Redefining \ref on input line 6450.
 LaTeX Info: Redefining \pageref on input line 6454.
-\Hy@abspage=\count115
-\c@Item=\count116
-\c@Hfootnote=\count117
+\Hy@abspage=\count119
+\c@Item=\count120
+\c@Hfootnote=\count121
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
-\Fld@listcount=\count118
-\c@bookmark@seq@number=\count119
+\Fld@listcount=\count122
+\c@bookmark@seq@number=\count123
  (/usr/share/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
@@ -433,21 +443,64 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 \Hy@SectionHShift=\skip58
 ) (/usr/share/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count120
+\c@float@type=\count124
 \float@exts=\toks23
 \float@box=\box31
 \@float@everytoks=\toks24
 \@floatcapt=\box32
+) (/usr/share/texmf-dist/tex/latex/roboto/roboto.sty
+Package: roboto 2017/04/10 (Bob Tennent) Supports Roboto fonts for all LaTeX engines.
+ (/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+ (/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks25
+\XKV@tempa@toks=\toks26
+)
+\XKV@depth=\count125
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (/usr/share/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+) (/usr/share/texmf-dist/tex/latex/fontaxes/fontaxes.sty
+Package: fontaxes 2014/03/23 v1.0d Font selection axes
+LaTeX Info: Redefining \upshape on input line 29.
+LaTeX Info: Redefining \itshape on input line 31.
+LaTeX Info: Redefining \slshape on input line 33.
+LaTeX Info: Redefining \scshape on input line 37.
+) (/usr/share/texmf-dist/tex/latex/mweights/mweights.sty
+Package: mweights 2017/03/30 (Bob Tennent) Support package for multiple-weight font packages. 
+LaTeX Info: Redefining \bfseries on input line 22.
+LaTeX Info: Redefining \mdseries on input line 30.
+LaTeX Info: Redefining \rmfamily on input line 38.
+LaTeX Info: Redefining \sffamily on input line 66.
+LaTeX Info: Redefining \ttfamily on input line 94.
+)
+LaTeX Info: Redefining \oldstylenums on input line 189.
+) (/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2018/04/16 v5.8 Page Geometry
+\Gm@cnth=\count126
+\Gm@cntv=\count127
+\c@Gm@tempcnt=\count128
+\Gm@bindingoffset=\dimen124
+\Gm@wd@mp=\dimen125
+\Gm@odd@mp=\dimen126
+\Gm@even@mp=\dimen127
+\Gm@layoutwidth=\dimen128
+\Gm@layoutheight=\dimen129
+\Gm@layouthoffset=\dimen130
+\Gm@layoutvoffset=\dimen131
+\Gm@dimlist=\toks27
+) (/usr/share/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks28
+) (/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/02/04 v3.8 Customized lists
+\labelindent=\skip59
+\enit@outerparindent=\dimen132
+\enit@toks=\toks29
+\enit@inbox=\box33
+\enit@count@id=\count129
+\enitdp@description=\count130
 ) (/home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/doc.aux
-
-LaTeX Warning: Label `fig:1' multiply defined.
-
-
-LaTeX Warning: Label `fig:1' multiply defined.
-
-
-LaTeX Warning: Label `fig:1' multiply defined.
-
 
 LaTeX Warning: Label `fig:1' multiply defined.
 
@@ -508,40 +561,46 @@ LaTeX Warning: Label `fig:1' multiply defined.
 )
 \openout1 = `doc.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 37.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 41.
  (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-\c@lstlisting=\count121
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Try loading font information for OT1+Roboto-LF on input line 41.
+ (/usr/share/texmf-dist/tex/latex/roboto/OT1Roboto-LF.fd
+File: OT1Roboto-LF.fd 2015/09/15 (autoinst) Font definitions for OT1/Roboto-LF.
+)
+LaTeX Font Info:    Font shape `OT1/Roboto-LF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 41.
+\c@lstlisting=\count131
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count122
-\scratchdimen=\dimen123
-\scratchbox=\box33
-\nofMPsegments=\count123
-\nofMParguments=\count124
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count125
-\MPscratchDim=\dimen124
-\MPnumerator=\count126
-\makeMPintoPDFobject=\count127
-\everyMPtoPDFconversion=\toks26
+\scratchcounter=\count132
+\scratchdimen=\dimen133
+\scratchbox=\box34
+\nofMPsegments=\count133
+\nofMParguments=\count134
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count135
+\MPscratchDim=\dimen134
+\MPnumerator=\count136
+\makeMPintoPDFobject=\count137
+\everyMPtoPDFconversion=\toks31
 ) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
  (/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -554,40 +613,97 @@ Package grfext Info: Graphics extension search list:
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
+LaTeX Info: Redefining \it@ocap on input line 41.
+LaTeX Info: Redefining \it@ccap on input line 41.
+
+
+File italian.ldf warning: 
+italian.ldf    With OT1 encoding guillemets are poorly faked
+italian.ldf    Use T1 encoding
+italian.ldf    or specify a font with command \CaporaliFrom
+italian.ldf    See the documentation concerning the babel-italian typesetting 
+italian.ldf    on input line 41.
+
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 37.
-\AtBeginShipoutBox=\box34
-Package hyperref Info: Link coloring OFF on input line 37.
- (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
+(lastpage)             ! on input line 41.
+\AtBeginShipoutBox=\box35
+Package hyperref Info: Link coloring OFF on input line 41.
+(/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count128
+\c@section@level=\count138
 )
-LaTeX Info: Redefining \ref on input line 37.
-LaTeX Info: Redefining \pageref on input line 37.
-LaTeX Info: Redefining \nameref on input line 37.
+LaTeX Info: Redefining \ref on input line 41.
+LaTeX Info: Redefining \pageref on input line 41.
+LaTeX Info: Redefining \nameref on input line 41.
  (/home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/doc.out) (/home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/doc.out)
 \@outlinefile=\write3
 \openout3 = `doc.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 40.
- (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+\c@mv@tabular=\count139
+\c@mv@boldtabular=\count140
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(28.45274pt, 540.60239pt, 28.45274pt)
+* v-part:(T,H,B)=(28.45274pt, 788.14136pt, 28.45274pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=540.60239pt
+* \textheight=788.14136pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
+* \topmargin=-80.81725pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=9.0pt
+* \footskip=19.91684pt
+* \marginparwidth=74.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=7.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    Font shape `OT1/Roboto-LF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 44.
+LaTeX Font Info:    Font shape `OT1/Roboto-LF/m/n' will be
+(Font)              scaled to size 17.28pt on input line 44.
+LaTeX Font Info:    Font shape `OT1/Roboto-LF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 44.
+LaTeX Font Info:    Try loading font information for U+msa on input line 44.
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 40.
+LaTeX Font Info:    Try loading font information for U+msb on input line 44.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [0
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Font shape `OT1/Roboto-LF/m/n' will be
+(Font)              scaled to size 10.95pt on input line 47.
+LaTeX Font Info:    Font shape `OT1/Roboto-LF/b/n' will be
+(Font)              scaled to size 10.95pt on input line 47.
+ (/home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/doc.toc
+LaTeX Font Info:    Font shape `OT1/Roboto-LF/b/n' will be
+(Font)              scaled to size 8.0pt on input line 3.
 )
-Overfull \hbox (6.70052pt too wide) in paragraph at lines 40--40
- [] 
- []
-
-[0
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (/home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/doc.toc [1])
 \tf@toc=\write4
 \openout4 = `doc.toc'.
 
@@ -597,386 +713,338 @@ File: lstlang1.sty 2018/09/02 1.7 listings language file
 File: lstlang1.sty 2018/09/02 1.7 listings language file
 ) (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
-) [2]
-Underfull \hbox (badness 10000) in paragraph at lines 60--75
+) [1]
+LaTeX Font Info:    Font shape `OT1/Roboto-LF/b/n' will be
+(Font)              scaled to size 10.0pt on input line 52.
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--79
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--88
+Underfull \hbox (badness 10000) in paragraph at lines 81--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--88
+Underfull \hbox (badness 10000) in paragraph at lines 93--107
+
+ []
+
+<images/ATM1.png, id=395, 930.47626pt x 543.02875pt>
+File: images/ATM1.png Graphic file (type png)
+<use images/ATM1.png>
+Package pdftex.def Info: images/ATM1.png  used on input line 118.
+(pdftex.def)             Requested size: 279.14502pt x 162.90987pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--142
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--103
+Underfull \hbox (badness 10000) in paragraph at lines 121--142
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--142
+
+ []
+
+[2pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.142     \item
+                Il VPI (Virtual Path Identifier) identifica il path virtua... </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/ATM1.png>]
+LaTeX Font Info:    Try loading font information for TS1+Roboto-LF on input line 142.
+ (/usr/share/texmf-dist/tex/latex/roboto/TS1Roboto-LF.fd
+File: TS1Roboto-LF.fd 2015/09/15 (autoinst) Font definitions for TS1/Roboto-LF.
+)
+LaTeX Font Info:    Font shape `TS1/Roboto-LF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 142.
+LaTeX Font Info:    Font shape `OT1/Roboto-LF/m/n' will be
+(Font)              scaled to size 6.0pt on input line 148.
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--162
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--162
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--162
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--162
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--165
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--248
 
  []
 
 [3]
-<images/ATM1.png, id=400, 930.47626pt x 543.02875pt>
-File: images/ATM1.png Graphic file (type png)
-<use images/ATM1.png>
-Package pdftex.def Info: images/ATM1.png  used on input line 114.
-(pdftex.def)             Requested size: 372.18391pt x 217.20764pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--137
+Underfull \hbox (badness 10000) in paragraph at lines 274--281
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--137
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--137
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--137
-
- []
-
-[4pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.137 \begin{itemize}
-                      </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/ATM1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 141--158
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 141--158
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 141--158
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 141--158
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 173--195
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 173--195
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 173--195
-
- []
-
-[5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 239--243
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 270--277
-
- []
-
-[7]
-Overfull \hbox (3.29225pt too wide) in paragraph at lines 322--325
-\OT1/cmr/m/n/10 OS basato sulla dis-tribuzione De-bian GNU/Linux, per-me-tte di testare pen-e-tra-tion test-ing OS, rewrite of  Back-
- []
-
-[8]
-<images/SchemaMetasploit.png, id=438, 1570.86874pt x 992.70876pt>
+<images/SchemaMetasploit.png, id=413, 1570.86874pt x 992.70876pt>
 File: images/SchemaMetasploit.png Graphic file (type png)
 <use images/SchemaMetasploit.png>
-Package pdftex.def Info: images/SchemaMetasploit.png  used on input line 344.
-(pdftex.def)             Requested size: 471.26427pt x 297.81493pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 348--353
-
- []
-
-[9pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.353 \begin{enumerate}
-                        </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/SchemaMetasploit.png>] [10]
-<images/MsfvenomMsfconsoleScreen.png, id=463, 2008.50375pt x 1016.79875pt>
-File: images/MsfvenomMsfconsoleScreen.png Graphic file (type png)
-<use images/MsfvenomMsfconsoleScreen.png>
-Package pdftex.def Info: images/MsfvenomMsfconsoleScreen.png  used on input line 406.
-(pdftex.def)             Requested size: 461.94615pt x 233.8588pt.
- (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2018/09/02 1.7 listings language file
-) (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2018/09/02 1.7 listings language file
-)
-<images/MsfvenomExample.png, id=464, 1295.84125pt x 392.46625pt>
-File: images/MsfvenomExample.png Graphic file (type png)
-<use images/MsfvenomExample.png>
-Package pdftex.def Info: images/MsfvenomExample.png  used on input line 416.
-(pdftex.def)             Requested size: 453.55124pt x 137.36523pt.
-<images/MfsconsoleExample.png, id=465, 890.32625pt x 328.22626pt>
-File: images/MfsconsoleExample.png Graphic file (type png)
-<use images/MfsconsoleExample.png>
-Package pdftex.def Info: images/MfsconsoleExample.png  used on input line 424.
-(pdftex.def)             Requested size: 356.12419pt x 131.28816pt.
- [11pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.427 \noindent
-               pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.427 \noindent
-                </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/MsfvenomMsfconsoleScreen.png> </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/MsfvenomExample.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 466--474
+Package pdftex.def Info: images/SchemaMetasploit.png  used on input line 345.
+(pdftex.def)             Requested size: 314.16818pt x 198.53824pt.
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 349--355
 
  []
 
-
-Overfull \hbox (15.5528pt too wide) in paragraph at lines 466--474
-\OT1/cmr/m/n/10 Per con-frontarli in-vece si pu^^Ro an-dare su []$\OT1/cmtt/m/n/10 https : / / en . wikipedia . org / wiki / Comparison _ of _ Intel _ processors$[]\OT1/cmr/m/n/10 . 
- []
-
-[12pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
+[5pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.474 \subsubsection
-                    {Intel i386} </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/MfsconsoleExample.png>]
-<images/BO1.png, id=500, 894.34125pt x 820.06375pt>
+l.414     \item C
+                 orrettezza dei bugs: Il fuzzing può anche essere usato per... </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/SchemaMetasploit.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 420--428
+
+ []
+
+<images/BO1.png, id=446, 894.34125pt x 820.06375pt>
 File: images/BO1.png Graphic file (type png)
 <use images/BO1.png>
-Package pdftex.def Info: images/BO1.png  used on input line 486.
-(pdftex.def)             Requested size: 268.30444pt x 246.02103pt.
+Package pdftex.def Info: images/BO1.png  used on input line 440.
+(pdftex.def)             Requested size: 178.86508pt x 164.00984pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 475--488
+Underfull \hbox (badness 10000) in paragraph at lines 429--442
 
  []
 
-[13pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.495     \item R
-                 egistri di istruzioni e stato: registri special purpose usa... </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/BO1.png>]
-<images/BO2.png, id=509, 826.08624pt x 801.99625pt>
+<images/BO2.png, id=447, 826.08624pt x 801.99625pt>
 File: images/BO2.png Graphic file (type png)
 <use images/BO2.png>
-Package pdftex.def Info: images/BO2.png  used on input line 532.
-(pdftex.def)             Requested size: 247.82777pt x 240.60072pt.
-<images/BO3.png, id=510, 737.75626pt x 454.69875pt>
+Package pdftex.def Info: images/BO2.png  used on input line 482.
+(pdftex.def)             Requested size: 165.21431pt x 160.39641pt.
+[6pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.485 \subsubsection
+                    {Integer overflow} </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/BO1.png>]
+<images/BO3.png, id=458, 737.75626pt x 454.69875pt>
 File: images/BO3.png Graphic file (type png)
 <use images/BO3.png>
-Package pdftex.def Info: images/BO3.png  used on input line 548.
-(pdftex.def)             Requested size: 221.32858pt x 136.41068pt.
- [14pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.550 \end{figure}
-                   </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/BO2.png>]
-<images/BO4.png, id=520, 484.81125pt x 575.14874pt>
+Package pdftex.def Info: images/BO3.png  used on input line 496.
+(pdftex.def)             Requested size: 147.54863pt x 90.93813pt.
+<images/BO4.png, id=459, 484.81125pt x 575.14874pt>
 File: images/BO4.png Graphic file (type png)
 <use images/BO4.png>
-Package pdftex.def Info: images/BO4.png  used on input line 573.
-(pdftex.def)             Requested size: 96.96053pt x 115.02771pt.
-<images/BO5.png, id=521, 1038.88126pt x 346.29375pt>
+Package pdftex.def Info: images/BO4.png  used on input line 519.
+(pdftex.def)             Requested size: 72.71854pt x 86.26859pt.
+<images/BO5.png, id=460, 1038.88126pt x 346.29375pt>
 File: images/BO5.png Graphic file (type png)
 <use images/BO5.png>
-Package pdftex.def Info: images/BO5.png  used on input line 580.
-(pdftex.def)             Requested size: 207.77257pt x 69.2575pt.
- [15pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has been already used, duplicate ignored
+Package pdftex.def Info: images/BO5.png  used on input line 526.
+(pdftex.def)             Requested size: 259.71968pt x 86.57321pt.
+ [7pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.582 \end{figure}
-                  pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has been already used, duplicate ignored
+l.535 \subsection
+                 {Protezione dello stack}pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.582 \end{figure}
-                   </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/BO3.png> </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/BO4.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 609--627
+l.535 \subsection
+                 {Protezione dello stack}pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.535 \subsection
+                 {Protezione dello stack}pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.535 \subsection
+                 {Protezione dello stack} </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/BO2.png> </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/BO3.png> </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/BO4.png> </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/BO5.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 552--570
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 609--627
+Underfull \hbox (badness 10000) in paragraph at lines 552--570
 
  []
 
-[16pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.627 \subsubsection
-                    {Approccio di reverse code engineering} </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/BO5.png>]
-<images/Macrofasi.png, id=540, 1087.06125pt x 159.59625pt>
+<images/Macrofasi.png, id=474, 1087.06125pt x 159.59625pt>
 File: images/Macrofasi.png Graphic file (type png)
 <use images/Macrofasi.png>
-Package pdftex.def Info: images/Macrofasi.png  used on input line 630.
+Package pdftex.def Info: images/Macrofasi.png  used on input line 573.
 (pdftex.def)             Requested size: 326.1209pt x 47.87923pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 634--642
+Underfull \hbox (badness 10000) in paragraph at lines 577--584
 
  []
 
-<images/RCE1.png, id=541, 418.56375pt x 274.02374pt>
+<images/RCE1.png, id=475, 418.56375pt x 274.02374pt>
 File: images/RCE1.png Graphic file (type png)
 <use images/RCE1.png>
-Package pdftex.def Info: images/RCE1.png  used on input line 650.
+Package pdftex.def Info: images/RCE1.png  used on input line 591.
 (pdftex.def)             Requested size: 125.57008pt x 82.20775pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 656--659
+Underfull \hbox (badness 10000) in paragraph at lines 597--601
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 656--659
+Underfull \hbox (badness 10000) in paragraph at lines 597--601
 
  []
 
-[17pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) has been already used, duplicate ignored
+[8pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.684     \item \textbf
-                       {Esecuzione su macchina fisica:} L’eseguibile viene...pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) has been already used, duplicate ignored
+l.615     \item \textbf
+                       {Sandbox:} Una sandbox è un meccanismo che permette ...pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.684     \item \textbf
-                       {Esecuzione su macchina fisica:} L’eseguibile viene... </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/Macrofasi.png> </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/RCE1.png>]
-<images/RCE2.png, id=554, 691.58376pt x 350.30875pt>
+l.615     \item \textbf
+                       {Sandbox:} Una sandbox è un meccanismo che permette ... </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/Macrofasi.png> </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/RCE1.png>]
+<images/RCE2.png, id=485, 691.58376pt x 350.30875pt>
 File: images/RCE2.png Graphic file (type png)
 <use images/RCE2.png>
-Package pdftex.def Info: images/RCE2.png  used on input line 703.
-(pdftex.def)             Requested size: 276.6286pt x 140.12102pt.
+Package pdftex.def Info: images/RCE2.png  used on input line 644.
+(pdftex.def)             Requested size: 207.47672pt x 105.09343pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 707--728
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 707--728
+Underfull \hbox (badness 10000) in paragraph at lines 648--669
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 707--728
+Underfull \hbox (badness 10000) in paragraph at lines 648--669
 
  []
 
-[18pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.728 \subsubsection
-                    {Reverse Code Engineering in ambiente Android} </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/RCE2.png>]
-<images/RCE3.png, id=563, 699.61375pt x 524.96124pt>
+Underfull \hbox (badness 10000) in paragraph at lines 648--669
+
+ []
+
+<images/RCE3.png, id=486, 699.61375pt x 524.96124pt>
 File: images/RCE3.png Graphic file (type png)
 <use images/RCE3.png>
-Package pdftex.def Info: images/RCE3.png  used on input line 740.
-(pdftex.def)             Requested size: 279.84055pt x 209.98077pt.
-<images/RCE4.png, id=564, 478.78876pt x 177.66376pt>
+Package pdftex.def Info: images/RCE3.png  used on input line 681.
+(pdftex.def)             Requested size: 188.89824pt x 141.74142pt.
+<images/RCE4.png, id=487, 478.78876pt x 177.66376pt>
 File: images/RCE4.png Graphic file (type png)
 <use images/RCE4.png>
-Package pdftex.def Info: images/RCE4.png  used on input line 745.
-(pdftex.def)             Requested size: 191.5121pt x 71.06424pt.
+Package pdftex.def Info: images/RCE4.png  used on input line 686.
+(pdftex.def)             Requested size: 143.63773pt x 53.29953pt.
+[9pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) has been already used, duplicate ignored
 
-Underfull \hbox (badness 10000) in paragraph at lines 748--753
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.689 \noindent
+               pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.689 \noindent
+                </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/RCE2.png> </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/RCE3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 689--694
 
  []
 
-[19pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.753 \subsubsection
-                    {Smali}pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.753 \subsubsection
-                    {Smali} </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/RCE3.png> </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/RCE4.png>]
-<images/RCE5.png, id=575, 814.04124pt x 141.52875pt>
+<images/RCE5.png, id=497, 814.04124pt x 141.52875pt>
 File: images/RCE5.png Graphic file (type png)
 <use images/RCE5.png>
-Package pdftex.def Info: images/RCE5.png  used on input line 760.
+Package pdftex.def Info: images/RCE5.png  used on input line 702.
 (pdftex.def)             Requested size: 325.61072pt x 56.61049pt.
-<images/RCE6.png, id=576, 587.19376pt x 173.64874pt>
+<images/RCE6.png, id=498, 587.19376pt x 173.64874pt>
 File: images/RCE6.png Graphic file (type png)
 <use images/RCE6.png>
-Package pdftex.def Info: images/RCE6.png  used on input line 765.
+Package pdftex.def Info: images/RCE6.png  used on input line 707.
 (pdftex.def)             Requested size: 176.15948pt x 52.09502pt.
-<images/RCE7.png, id=577, 532.99126pt x 318.18875pt>
+<images/RCE7.png, id=499, 532.99126pt x 318.18875pt>
 File: images/RCE7.png Graphic file (type png)
 <use images/RCE7.png>
-Package pdftex.def Info: images/RCE7.png  used on input line 780.
-(pdftex.def)             Requested size: 319.79723pt x 190.9147pt.
- [20pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) has been already used, duplicate ignored
+Package pdftex.def Info: images/RCE7.png  used on input line 722.
+(pdftex.def)             Requested size: 266.49498pt x 159.09398pt.
+LaTeX Font Info:    Font shape `OT1/Roboto-LF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 729.
+[10pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.793 \begin{quotation}
-                       \small\selectlanguage{english}pdfTeX warning (ext4): destination with the same identifier (name{figure.17}) has been already used, duplicate ignored
+l.751 \subsubsection
+                    {Tipi di Honeypot}pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.793 \begin{quotation}
-                       \small\selectlanguage{english}pdfTeX warning (ext4): destination with the same identifier (name{figure.18}) has been already used, duplicate ignored
+l.751 \subsubsection
+                    {Tipi di Honeypot}pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.793 \begin{quotation}
-                       \small\selectlanguage{english} </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/RCE5.png> </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/RCE6.png> </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/RCE7.png>] [21]
-Overfull \hbox (6.85034pt too wide) in paragraph at lines 851--855
-\OT1/cmr/m/n/10 I database spesso ven-gono at-tac-cati tramite SQL In-jec-tion. Al-cuni fire-wall for-niscono/-sup-por-t-ano l'architettura
- []
+l.751 \subsubsection
+                    {Tipi di Honeypot}pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) has been already used, duplicate ignored
 
-(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.751 \subsubsection
+                    {Tipi di Honeypot} </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/RCE4.png> </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/RCE5.png> </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/RCE6.png> </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/RCE7.png>] (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2018/09/02 1.7 listings language file
 )
-Underfull \hbox (badness 10000) in paragraph at lines 856--859
+Underfull \hbox (badness 10000) in paragraph at lines 792--795
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 861.
-(/usr/share/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 861.
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 870.
- (/usr/share/texmf-dist/tex/latex/base/omlcmr.fd
-File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 870.
- (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+LaTeX Font Info:    Try loading font information for OMS+Roboto-LF on input line 797.
+LaTeX Font Info:    No file OMSRoboto-LF.fd. on input line 797.
+
+LaTeX Font Warning: Font shape `OMS/Roboto-LF/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbraceleft' on input line 797.
+
+LaTeX Font Info:    Font shape `TS1/Roboto-LF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 798.
+LaTeX Font Info:    Font shape `OT1/Roboto-LF/b/n' will be
+(Font)              scaled to size 7.0pt on input line 802.
+LaTeX Font Info:    Try loading font information for OML+Roboto-LF on input line 806.
+LaTeX Font Info:    No file OMLRoboto-LF.fd. on input line 806.
+
+LaTeX Font Warning: Font shape `OML/Roboto-LF/m/n' undefined
+(Font)              using `OML/cmm/m/it' instead
+(Font)              for symbol `textgreater' on input line 806.
+
+(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2018/09/02 1.7 listings language file
 ) (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
@@ -984,209 +1052,213 @@ File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
 File: lstlang1.sty 2018/09/02 1.7 listings language file
 ) (/usr/share/texmf-dist/tex/latex/listings/lstlang2.sty
 File: lstlang2.sty 2018/09/02 1.7 listings language file
-) [22]
-<images/HP1.png, id=642, 770.88pt x 441.65pt>
+)
+LaTeX Font Info:    Font shape `OT1/Roboto-LF/m/it' will be
+(Font)              scaled to size 7.0pt on input line 834.
+LaTeX Font Info:    Font shape `TS1/Roboto-LF/m/it' will be
+(Font)              scaled to size 7.0pt on input line 834.
+<images/HP1.png, id=514, 770.88pt x 441.65pt>
 File: images/HP1.png Graphic file (type png)
 <use images/HP1.png>
-Package pdftex.def Info: images/HP1.png  used on input line 914.
+Package pdftex.def Info: images/HP1.png  used on input line 850.
 (pdftex.def)             Requested size: 231.26578pt x 132.49602pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 918--927
+ [11]
+Underfull \hbox (badness 10000) in paragraph at lines 854--863
 
  []
 
-
-Overfull \hbox (8.8894pt too wide) in paragraph at lines 928--936
-\OT1/cmr/m/n/10 Supervisor Con-trol And Data Ac-qui-si-tion ^^Re un sis-tema di soft-ware e hard-ware che per-me-tte ad un'organizzazione
- []
-
-[23pdfTeX warning (ext4): destination with the same identifier (name{figure.19}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.949     sudo 
-               apt-get install MySQL-python </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/HP1.png>]
-<images/HP2.png, id=669, 1565.85pt x 790.955pt>
+(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2018/09/02 1.7 listings language file
+) (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2018/09/02 1.7 listings language file
+)
+<images/HP2.png, id=575, 1565.85pt x 790.955pt>
 File: images/HP2.png Graphic file (type png)
 <use images/HP2.png>
-Package pdftex.def Info: images/HP2.png  used on input line 996.
-(pdftex.def)             Requested size: 469.75862pt x 237.28833pt.
- [24]
-Underfull \hbox (badness 10000) in paragraph at lines 999--1004
-
- []
-
-[25pdfTeX warning (ext4): destination with the same identifier (name{figure.20}) has been already used, duplicate ignored
+Package pdftex.def Info: images/HP2.png  used on input line 932.
+(pdftex.def)             Requested size: 391.46155pt x 197.73827pt.
+ [12pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1019 \end{itemize}
-                     </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/HP2.png>]
-<images/DK1.png, id=694, 2083.785pt x 712.6625pt>
+l.935 \textbf{IP-src}
+                      = ip dell'hacker con relativa location \\ </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/HP1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 935--940
+
+ []
+
+<images/DK1.png, id=602, 2083.785pt x 712.6625pt>
 File: images/DK1.png Graphic file (type png)
 <use images/DK1.png>
-Package pdftex.def Info: images/DK1.png  used on input line 1034.
+Package pdftex.def Info: images/DK1.png  used on input line 970.
 (pdftex.def)             Requested size: 458.43413pt x 156.78622pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1030--1036
+Underfull \hbox (badness 10000) in paragraph at lines 966--972
 
  []
 
-[26pdfTeX warning (ext4): destination with the same identifier (name{figure.21}) has been already used, duplicate ignored
+[13pdfTeX warning (ext4): destination with the same identifier (name{figure.17}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1054     \item I
-                  ntegrità di sistema: Assicura che il sistema esegua le su... </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/DK1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1083--1119
+l.975     \item D
+                 DoS DNS amplification si basa sulla modifica di un pacchett...pdfTeX warning (ext4): destination with the same identifier (name{figure.18}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.975     \item D
+                 DoS DNS amplification si basa sulla modifica di un pacchett... </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/HP2.png> </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/DK1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1017--1053
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1083--1119
+Underfull \hbox (badness 10000) in paragraph at lines 1017--1053
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1083--1119
+Underfull \hbox (badness 10000) in paragraph at lines 1017--1053
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1083--1119
+Underfull \hbox (badness 10000) in paragraph at lines 1017--1053
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1083--1119
+Underfull \hbox (badness 10000) in paragraph at lines 1017--1053
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1083--1119
+Underfull \hbox (badness 10000) in paragraph at lines 1017--1053
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1083--1119
+Underfull \hbox (badness 10000) in paragraph at lines 1017--1053
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1083--1119
+Underfull \hbox (badness 10000) in paragraph at lines 1017--1053
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1083--1119
+Underfull \hbox (badness 10000) in paragraph at lines 1017--1053
 
  []
 
-[27]
-<images/OceanLotus1.png, id=707, 1426.32875pt x 93.34875pt>
+<images/OceanLotus1.png, id=612, 1426.32875pt x 93.34875pt>
 File: images/OceanLotus1.png Graphic file (type png)
 <use images/OceanLotus1.png>
-Package pdftex.def Info: images/OceanLotus1.png  used on input line 1143.
-(pdftex.def)             Requested size: 427.90193pt x 28.00484pt.
+Package pdftex.def Info: images/OceanLotus1.png  used on input line 1077.
+(pdftex.def)             Requested size: 356.58131pt x 23.33713pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1121--1145
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1121--1145
+Underfull \hbox (badness 10000) in paragraph at lines 1055--1079
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1121--1145
+Underfull \hbox (badness 10000) in paragraph at lines 1055--1079
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1121--1145
+Underfull \hbox (badness 10000) in paragraph at lines 1055--1079
 
  []
 
-<images/OceanLotus2.png, id=708, 1038.88126pt x 1135.24126pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 1055--1079
+
+ []
+
+[14]
+<images/OceanLotus2.png, id=618, 1038.88126pt x 1135.24126pt>
 File: images/OceanLotus2.png Graphic file (type png)
 <use images/OceanLotus2.png>
-Package pdftex.def Info: images/OceanLotus2.png  used on input line 1154.
-(pdftex.def)             Requested size: 415.54514pt x 454.08846pt.
+Package pdftex.def Info: images/OceanLotus2.png  used on input line 1088.
+(pdftex.def)             Requested size: 311.66678pt x 340.575pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1146--1156
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1146--1156
-
- []
-
-[28pdfTeX warning (ext4): destination with the same identifier (name{figure.22}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1156 \end{figure}
-                    </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/OceanLotus1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1158--1174
+Underfull \hbox (badness 10000) in paragraph at lines 1080--1090
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1158--1174
-
- []
-
-[29pdfTeX warning (ext4): destination with the same identifier (name{figure.23}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1174 \begin{enumerate}
-                         </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/OceanLotus2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1187--1199
+Underfull \hbox (badness 10000) in paragraph at lines 1080--1090
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1187--1199
+Underfull \hbox (badness 10000) in paragraph at lines 1092--1109
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1187--1199
+Underfull \hbox (badness 10000) in paragraph at lines 1092--1109
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1121--1134
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1121--1134
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1121--1134
 
  []
 
 
 AED: lastpage setting LastPage
-[30]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1206.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1206.
+[15pdfTeX warning (ext4): destination with the same identifier (name{figure.19}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1140 \end{document}
+                     pdfTeX warning (ext4): destination with the same identifier (name{figure.20}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1140 \end{document}
+                      </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/OceanLotus1.png> </home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/images/OceanLotus2.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1140.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1140.
  (/home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/doc.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1206.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1206.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1140.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1140.
 Package rerunfilecheck Info: File `doc.out' has not changed.
-(rerunfilecheck)             Checksum: BDB302E3C8E4F8B473E0469965251D42;5326.
+(rerunfilecheck)             Checksum: 3DCCE4C2335FDC5B42B626DCBD76DA09;5463.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1206.
  ) 
 Here is how much of TeX's memory you used:
- 11990 strings out of 492616
- 173827 string characters out of 6135178
- 517403 words of memory out of 5000000
- 15489 multiletter control sequences out of 15000+600000
- 13327 words of font info for 51 fonts, out of 8000000 for 9000
+ 13883 strings out of 492616
+ 203994 string characters out of 6135178
+ 616281 words of memory out of 5000000
+ 17372 multiletter control sequences out of 15000+600000
+ 26183 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,12n,58p,295b,3678s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on /home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/doc.pdf (31 pages, 7265876 bytes).
+ 46i,12n,97p,845b,3057s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/roboto/rbto_brv6l3.enc}{/usr/share/texmf-dist/fonts/enc/dvips/roboto/rbto_schjax.enc}{/usr/share/texmf-dist/fonts/enc/dvips/roboto/rbto_bergpl.enc}{/usr/share/texmf-dist/fonts/enc/dvips/roboto/rbto_oa6oe5.enc}</usr/share/texmf-dist/fonts/type1/google/roboto/Roboto-Bold.pfb></usr/share/texmf-dist/fonts/type1/google/roboto/Roboto-Italic.pfb></usr/share/texmf-dist/fonts/type1/google/roboto/Roboto-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on /home/edoardo/Documents/SicurezzaInformatica/DocEsameTex/doc.pdf (16 pages, 5125086 bytes).
 PDF statistics:
- 830 PDF objects out of 1000 (max. 8388607)
- 730 compressed objects within 8 object streams
- 241 named destinations out of 1000 (max. 500000)
- 700 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 709 PDF objects out of 1000 (max. 8388607)
+ 636 compressed objects within 7 object streams
+ 204 named destinations out of 1000 (max. 500000)
+ 701 words of extra memory for PDF output out of 10000 (max. 10000000)
 

